@@ -1,12 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Button } from 'react-bootstrap';
+import { BrowserRouter, Route} from 'react-router-dom';
+import HomeScreen from './containers/HomeScreen';
 
 function App() {
   return (
     <div className="App">
-      <Button>Test</Button>
+      <BrowserRouter>
+        <div className="App">
+          <Route exact path="/" render={(props) => {
+            return <HomeScreen />
+          }} />
+        </div>
+      </BrowserRouter>
     </div>
   );
 }
