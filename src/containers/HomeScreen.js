@@ -4,6 +4,7 @@ import Banner from "../components/Banner"
 import Navigation from "../components/Navigation"
 import IntroVideo from "../components/IntroVideo"
 import Carousel  from "../components/Carousel"
+import Footer  from "../components/Footer"
 
 function HomeScreen() {
 
@@ -14,6 +15,7 @@ function HomeScreen() {
             {/* <Carousel /> */}
             <IntroVideo />
             <Navigation />
+            <Footer />
         </div>
     )
 
