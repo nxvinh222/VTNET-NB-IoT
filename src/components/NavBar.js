@@ -3,7 +3,7 @@ import { Navbar, Nav, NavDropdown, Form, FormControl, Button, Container } from '
 
 function NavBar() {
     return(
-        <Container>
+        <div>
             <Navbar bg="light" expand="lg">
                 <Navbar.Brand href="#home">
                     <img
@@ -33,7 +33,7 @@ function NavBar() {
                     </Form>
                 </Navbar.Collapse>
             </Navbar>              
-        </Container>
+        </div>
     )
 }
 

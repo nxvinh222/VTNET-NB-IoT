@@ -1,5 +1,5 @@
 import React, { Component, useState } from "react"; 
-import { Container, Nav, Card, Button } from "react-bootstrap"
+import { Container, Row, Nav, Card, Button } from "react-bootstrap"
 import '../App.css';
 
 function Navigation() {
@@ -35,22 +35,18 @@ function Navigation() {
 
 
 
-    // onclick = 
-
     return (
-        <Container className="ml-auto mt-2 mt-lg-0"> 
-            <h2 style={{
-                textAlign: "center",
-                fontSize: "font-size:8vw",
-                }}>See how we’re transforming lives and businesses</h2>
-            <Card >
-                <Card.Header>
+        <Container> 
+
+            <h2 class="video-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">See how we’re transforming lives and businesses</h2>
+            <Card border="primary">
+                <Card.Header >
                     <Nav 
                         variant="pills" 
                         defaultActiveKey="#first"
                         className="justify-content-center"
                      >
-                        <Nav.Item>
+                        <Nav.Item >
                             <Nav.Link className="infoLink" eventKey="card_1" href="#first" onSelect={(selectedKey) => setNavContent(card_1)} >IoT Solution</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
@@ -65,7 +61,7 @@ function Navigation() {
                     </Nav>
                 </Card.Header>
                 <Card.Body>
-                    <Card.Title>{navContent.title}</Card.Title>
+                    <Card.Title class="font-weight-bold text-center">{navContent.title}</Card.Title>
                     <Card.Text>
                         {navContent.text}
                     </Card.Text>
@@ -74,6 +70,7 @@ function Navigation() {
                 </Card.Body>
                 
             </Card>
+
         </Container> 
     )
 }
