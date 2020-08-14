@@ -1,75 +1,44 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.hero-image { 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  /* display: block; */
+  height: 10%;
+  filter: blur(5px); 
+  width: 100%; 
+  /* z-index: 0; */
+  position: relative;
+} 
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-
-.container {
-  width: 90%;
-  height: 700px;
-  margin: auto;
-  text-align: center;
-}
-/* body, html {
-    height: 100%;
-} */
- 
-/* Phần khung chứa hình ảnh*/
-.hero-image {
-    /* The image used */
-    background-image: url("https://mobile-battlegrounds.ru/wp-content/uploads/2020/04/screen-1.jpg");
- 
-    /* chiều cao của khung chứa */
-    height: 70%;
- 
-    /* đặt vị trí cho hình ảnh */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
- 
 /* đặt đặt text lên phần hình ảnh */
 .hero-text {
+
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: calc(50% + 10px);
+    /* bottom: 50%; */
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
 }
 
+
+.carousel {
+  display: none;
+  /* display: block; */
+  background-color: purple;
+  width: 100%;
+  padding: 0px;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  /* margin-top: -20%; */
+  height: 50%;
+}
+
+
+.infoLink {
+  /* background-color: black; */
+}

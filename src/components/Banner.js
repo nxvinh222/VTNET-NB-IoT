@@ -6,24 +6,27 @@ import '../App.css';
 const logoUri =
   "https://imagesvc.timeincapp.com/v3/fan/image?url=https://raptorsrapture.com/wp-content/uploads/getty-images/2016/04/1094224730.jpeg&w=1600";
 
+const carouselPicture =
+    "https://upload.wikimedia.org/wikipedia/commons/5/52/Golden_sky_%284080648531%29.jpg"
+
 class Banner extends Component {
   render() {
     return (
-        <div class="container">         
-            <div class="hero-image">
-                <div class="hero-text">
+        <div className="container">         
+            {/* <img  src= {logoUri} /> */}
+            <img className="hero-image" src={carouselPicture} />
+                <div className="hero-text">
                 <h1>IoT</h1>
                 <p>Viettel</p>
                 </div>
-            </div>
 
 
 
-            <Carousel>
+            <Carousel className="carousel">
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
-                    src={logoUri}
+                    src={carouselPicture}
                     alt="First slide"
                     />
                     <Carousel.Caption>
@@ -34,7 +37,7 @@ class Banner extends Component {
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
-                    src={logoUri}
+                    src={carouselPicture}
                     alt="Third slide"
                     />
 
@@ -46,7 +49,7 @@ class Banner extends Component {
                 <Carousel.Item>
                     <img
                     className="d-block w-100"
-                    src={logoUri}
+                    src={carouselPicture}
                     alt="Third slide"
                     />
 
