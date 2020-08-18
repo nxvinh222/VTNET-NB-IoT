@@ -11,15 +11,15 @@ function IntroVideo() {
             <p class="lead">Watch the video to see how Internet of Things (IoT) could transform and revolutionise every business</p>
             </div>
 
-
-            <Card className="p-3 py-3 shadow bg-white rounded">
+            <Row>
+            <Card className="mx-auto p-3 m-0 shadow bg-white rounded">
                 <Card.Body>
                     <Row>
-                        <ResponsiveEmbed className='col-md-8' aspectRatio="16by9">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+                        <ResponsiveEmbed className='col-md-8 col-lg-6' aspectRatio="16by9">
+                            <iframe  src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
                         </ResponsiveEmbed>
                         {/* <Card.Title>Card Title</Card.Title> */}
-                        <Card.Text  className='col-md-3 m-3'>
+                        <Card.Text  className='lead col-md-3 col-lg-5 m-3'>
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
                             <br></br>
@@ -30,6 +30,7 @@ function IntroVideo() {
                     </Row>
                 </Card.Body>
             </Card>
+            </Row>
             
         </Container> 
     )
