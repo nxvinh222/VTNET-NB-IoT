@@ -32,40 +32,41 @@ function Navigation() {
 
     return (
         <Container> 
-
-            <h2 class="video-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">See how we’re transforming lives and businesses</h2>
-            <Card>
-                <Card.Header >
-                    <Nav 
-                        variant="pills" 
-                        defaultActiveKey="#second"
-                        className="justify-content-center"
-                     >
-                        <Nav.Item >
-                            <Nav.Link className="infoLink" eventKey="card_1" href="#first" onSelect={(selectedKey) => setNavContent(card_1)} >IoT Solution</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link className="infoLink" eventKey="card_2" href="#second" onSelect={(selectedKey) => setNavContent(card_2)}>Industries</Nav.Link>
-                        </Nav.Item>     
-                        <Nav.Item>
-                            <Nav.Link className="infoLink" eventKey="card_3" href="#third" onSelect={(selectedKey) => setNavContent(card_3)}>Why Viettel</Nav.Link>
-                        </Nav.Item> 
-                        <Nav.Item>
-                            <Nav.Link className="infoLink" eventKey="card_4" href="#forth" onSelect={(selectedKey) => setNavContent(card_4)}>IoT platform</Nav.Link>
-                        </Nav.Item> 
-                    </Nav>
-                </Card.Header>
-                <Card.Body>
-                    <Card.Title class="font-weight-bold text-center">{navContent.title}</Card.Title>
-                    <Card.Text>
-                        {navContent.text}
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                    
-                </Card.Body>
+            <Row>
+                <h2 class="col-sm-10 py-3 pt-md-5 pb-md-4 mx-auto text-center display-4">See how we’re transforming lives and businesses</h2>
                 
-            </Card>
-
+                <Card className="col-sm-10 col-lg-7 mx-auto border-0">
+                    <Card.Header >
+                        <Nav 
+                            variant="pills" 
+                            defaultActiveKey="#second"
+                            className="justify-content-center"
+                        >
+                            <Nav.Item >
+                                <Nav.Link className="infoLink" eventKey="card_1" href="#first" onSelect={(selectedKey) => setNavContent(card_1)} >IoT Solution</Nav.Link>
+                            </Nav.Item>
+                            <Nav.Item>
+                                <Nav.Link className="infoLink" eventKey="card_2" href="#second" onSelect={(selectedKey) => setNavContent(card_2)}>Industries</Nav.Link>
+                            </Nav.Item>     
+                            <Nav.Item>
+                                <Nav.Link className="infoLink" eventKey="card_3" href="#third" onSelect={(selectedKey) => setNavContent(card_3)}>Why Viettel</Nav.Link>
+                            </Nav.Item> 
+                            <Nav.Item>
+                                <Nav.Link className="infoLink" eventKey="card_4" href="#forth" onSelect={(selectedKey) => setNavContent(card_4)}>IoT platform</Nav.Link>
+                            </Nav.Item> 
+                        </Nav>
+                    </Card.Header>
+                    <Card.Body>
+                        <Card.Title class="font-weight-bold text-center">{navContent.title}</Card.Title>
+                        <Card.Text>
+                            {navContent.text}
+                        </Card.Text>
+                        <Button variant="primary">Go somewhere</Button>
+                        
+                    </Card.Body>
+                    
+                </Card>
+            </Row>
         </Container> 
     )
 }

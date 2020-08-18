@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"; 
-import { Container, CardDeck, Card, Button } from "react-bootstrap"
+import { Container, CardDeck, Row } from "react-bootstrap"
 import IntroCard from "./IntroCard"
 import '../App.css';
 
@@ -35,11 +35,13 @@ function IntroCards() {
 
     return (
         <Container> 
-            {/* px-3 py-3 pt-md-5 pb-md-4 mx-auto */}
-            <h2 class="video-header py-3 pt-lg-5 pb-lg-4 text-center">See how we’re transforming lives and businesses</h2>
-            <CardDeck>
-                {allCard}
-            </CardDeck>
+            <Row>
+                {/* px-3 py-3 pt-md-5 pb-md-4 mx-auto */}
+                <h2 class="video-header py-3 pt-lg-5 pb-lg-4 text-center"></h2>
+                <CardDeck>
+                    {allCard}
+                </CardDeck>
+            </Row>
         </Container> 
     )
 }
