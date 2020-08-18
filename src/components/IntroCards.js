@@ -1,12 +1,14 @@
 import React from "react"; 
-import { Container, ResponsiveEmbed, Card, Button } from "react-bootstrap"
+import { Container, CardDeck, Card, Button } from "react-bootstrap"
 import '../App.css';
 
 function IntroCards() {
 
     return (
         <Container> 
-            <CardGroup>
+            {/* px-3 py-3 pt-md-5 pb-md-4 mx-auto */}
+            <h2 class="video-header py-3 pt-lg-5 pb-lg-4 text-center">See how we’re transforming lives and businesses</h2>
+            <CardDeck>
                 <Card>
                     <Card.Img variant="top" src="holder.js/100px160" />
                     <Card.Body>
@@ -47,7 +49,7 @@ function IntroCards() {
                     <small className="text-muted">Last updated 3 mins ago</small>
                     </Card.Footer>
                 </Card>
-            </CardGroup>
+            </CardDeck>
         </Container> 
     )
 }

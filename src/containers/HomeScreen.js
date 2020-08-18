@@ -5,6 +5,7 @@ import Navigation from "../components/Navigation"
 import IntroVideo from "../components/IntroVideo"
 import Carousel  from "../components/Carousel"
 import Footer  from "../components/Footer"
+import IntroCards from "../components/IntroCards"
 
 function HomeScreen() {
 
@@ -15,6 +16,7 @@ function HomeScreen() {
             {/* <Carousel /> */}
             <IntroVideo />
             <Navigation />
+            <IntroCards />
             <Footer />
         </div>
     )
