@@ -1,54 +1,44 @@
-import React from "react"; 
+import React, { useState, useEffect } from "react"; 
 import { Container, CardDeck, Card, Button } from "react-bootstrap"
+import IntroCard from "./IntroCard"
 import '../App.css';
 
+
+
 function IntroCards() {
+
+    // state
+    const [data, setData] = useState([])
+
+    useEffect(() => {
+        // Update the document title using the browser API
+        setData([
+            {
+                title: "Narrowband-IoT",
+                text: " NB-IoT is the ideal connectivity solution if you need long-life batteries and a compact form factor. It’s especially good for applications that generate low data traffic or are deployed across wide geographic areas."
+            },
+            {
+                title: "Viettel Business",
+                text: "test"
+            },
+            {
+                title: "Viettel Business",
+                text: "test"
+            }
+        ])
+
+    }, []);
+
+    const allCard = data.map(cardInfo => (
+        <IntroCard title={cardInfo.title} text={cardInfo.text}/>
+    ))
 
     return (
         <Container> 
             {/* px-3 py-3 pt-md-5 pb-md-4 mx-auto */}
             <h2 class="video-header py-3 pt-lg-5 pb-lg-4 text-center">See how we’re transforming lives and businesses</h2>
             <CardDeck>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
-                    <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
-                    </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
-                    <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This card has supporting text below as a natural lead-in to additional
-                        content.{' '}
-                    </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
-                    <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                    <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This card has even longer content than the first to
-                        show that equal height action.
-                    </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                    <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                </Card>
+                {allCard}
             </CardDeck>
         </Container> 
     )

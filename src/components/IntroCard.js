@@ -2,16 +2,17 @@ import React from "react";
 import { Container, Card, Button } from "react-bootstrap"
 import '../App.css';
 
-function IntroCard() {
+function IntroCard(props) {
 
     return (
-        <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
+        <Card className="shadow p-3 mb-5 bg-white rounded">
+                    <Card.Img variant="top" src="https://www.vodafone.com/business/media/image/1508863266699/640/651386824-h_800x400.jpg" />
                     <Card.Body>
-                    <Card.Title>Card title</Card.Title>
+                    <Card.Title>
+                        {props.title}
+                    </Card.Title>
                     <Card.Text>
-                        This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.
+                        {props.text}
                     </Card.Text>
                     </Card.Body>
                     <Card.Footer>
