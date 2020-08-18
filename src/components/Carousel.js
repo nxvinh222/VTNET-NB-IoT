@@ -8,11 +8,7 @@ const carouselPicture =
 class Banner extends Component {
   render() {
     return (
-        <div>         
-
-
-
-
+        <div className="col-12">         
             <Carousel className="carousel">
                 <Carousel.Item>
                     <img
