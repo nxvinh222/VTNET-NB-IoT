@@ -21,7 +21,7 @@ function IntroCards() {
             {
                 title: "Viettel Business",
                 text: "test",
-                picture: "www.vodafone.com/business/media/image/1508875472122/640/shutterstock_1131955979_f_800x400.jpg"
+                picture: "https://www.vodafone.com/business/media/image/1508875472122/640/shutterstock_1131955979_f_800x400.jpg"
             },
             {
                 title: "Narrowband-IoT",
@@ -31,7 +31,7 @@ function IntroCards() {
             {
                 title: "Viettel Business",
                 text: "test",
-                picture: "www.vodafone.com/business/media/image/1508875472122/640/shutterstock_1131955979_f_800x400.jpg"
+                picture: "https://www.vodafone.com/business/media/image/1508875472122/640/shutterstock_1131955979_f_800x400.jpg"
             },
             {
                 title: "Narrowband-IoT",
@@ -41,7 +41,7 @@ function IntroCards() {
             {
                 title: "Viettel Business",
                 text: "test",
-                picture: "www.vodafone.com/business/media/image/1508875472122/640/shutterstock_1131955979_f_800x400.jpg"
+                picture: "https://www.vodafone.com/business/media/image/1508875472122/640/shutterstock_1131955979_f_800x400.jpg"
             }
         ])
 
@@ -57,7 +57,7 @@ function IntroCards() {
                 {/* px-3 py-3 pt-md-5 pb-md-4 mx-auto */}
                 <h2 class="video-header py-3 pt-lg-5 pb-lg-4 text-center"></h2>
                 <CardDeck>
-                    <Row xs={1} md={3}>
+                    <Row xs={1} md={2} lg={3}>
                         {allCard}
                     </Row>
                 </CardDeck>
