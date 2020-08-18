@@ -5,14 +5,14 @@ import '../App.css';
 function IntroVideo() {
 
     return (
-        <Container fluid> 
+        <Container> 
             <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
                 <h1 class="display-4">Pricing</h1>
                 <p class="lead">Watch the video to see how Internet of Things (IoT) could transform and revolutionise every business</p>
             </div>
 
 
-                <Card className="col-lg-9 mx-auto p-3 shadow bg-white rounded">
+                <Card className="col-lg-9 mx-auto p-3 shadow p-3 mb-5  bg-white rounded">
                     <Card.Body>
                         <Row>
                             <ResponsiveEmbed className='col-md-8' aspectRatio="16by9">

@@ -35,10 +35,10 @@ function Navigation() {
             <Row>
                 <h2 class="col-sm-10 py-3 pt-md-5 pb-md-4 mx-auto text-center display-4">See how we’re transforming lives and businesses</h2>
                 
-                <Card className="col-sm-10 col-lg-7 mx-auto border-0">
+                <Card className="col-lg-6 mx-auto border-0">
                     <Card.Header >
                         <Nav 
-                            variant="pills" 
+                            variant="tabs" 
                             defaultActiveKey="#second"
                             className="justify-content-center"
                         >

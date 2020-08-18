@@ -24,6 +24,18 @@ function IntroCards() {
             {
                 title: "Viettel Business",
                 text: "test"
+            },
+            {
+                title: "Narrowband-IoT",
+                text: " NB-IoT is the ideal connectivity solution if you need long-life batteries and a compact form factor. It’s especially good for applications that generate low data traffic or are deployed across wide geographic areas."
+            },
+            {
+                title: "Viettel Business",
+                text: "test"
+            },
+            {
+                title: "Viettel Business",
+                text: "test"
             }
         ])
 
@@ -35,13 +47,15 @@ function IntroCards() {
 
     return (
         <Container> 
-            <Row>
+            
                 {/* px-3 py-3 pt-md-5 pb-md-4 mx-auto */}
                 <h2 class="video-header py-3 pt-lg-5 pb-lg-4 text-center"></h2>
                 <CardDeck>
-                    {allCard}
+                    <Row xs={1} md={3}>
+                        {allCard}
+                    </Row>
                 </CardDeck>
-            </Row>
+            
         </Container> 
     )
 }
