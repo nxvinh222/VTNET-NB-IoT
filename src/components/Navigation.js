@@ -39,7 +39,7 @@ function Navigation() {
                     <Card.Header >
                         <Nav 
                             variant="tabs" 
-                            defaultActiveKey="#second"
+                            defaultActiveKey="card_1"
                             className="justify-content-center"
                         >
                             <Nav.Item >

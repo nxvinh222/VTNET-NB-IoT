@@ -5,7 +5,7 @@ import templatePicture from "./969.jpg"
 // import HeroBanner from 'react-hero-banner';
 
 const logoUri =
-  "https://imagesvc.timeincapp.com/v3/fan/image?url=https://raptorsrapture.com/wp-content/uploads/getty-images/2016/04/1094224730.jpeg&w=1600";
+  "https://www.vodafone.com/business/media/image/1508862781296/640/251121730-h_800x400.jpg";
 
 const carouselPicture =
     "https://upload.wikimedia.org/wikipedia/commons/5/52/Golden_sky_%284080648531%29.jpg"
@@ -18,11 +18,11 @@ class Banner extends Component {
     return (
         <div>         
             {/* <img  src= {logoUri} /> */}
-            <img className="hero-image" src={templatePicture} />
-                <div className="hero-text">
+            <img className="col-12 p-0" src={logoUri} />
+                {/* <div className="hero-text">
                     <h1>IoT</h1>
                     <p>Viettel</p>
-                </div>
+                </div> */}
 
         </div>
     );
