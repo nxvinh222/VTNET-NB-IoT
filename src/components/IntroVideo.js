@@ -10,7 +10,7 @@ function IntroVideo() {
             <h1 class="display-4">Pricing</h1>
             <p class="lead">Watch the video to see how Internet of Things (IoT) could transform and revolutionise every business</p>
             </div>
-            <Card border="primary">
+            <Card>
                 <Card.Body>
                     <ResponsiveEmbed aspectRatio="16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>

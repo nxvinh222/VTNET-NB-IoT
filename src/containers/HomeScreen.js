@@ -11,7 +11,7 @@ function HomeScreen() {
     return(
         <div>
             <NavBar />
-            {/* <Banner /> */}
+            <Banner />
             {/* <Carousel /> */}
             <IntroVideo />
             <Navigation />

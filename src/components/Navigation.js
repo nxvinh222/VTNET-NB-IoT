@@ -34,7 +34,7 @@ function Navigation() {
         <Container> 
 
             <h2 class="video-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">See how we’re transforming lives and businesses</h2>
-            <Card border="primary">
+            <Card>
                 <Card.Header >
                     <Nav 
                         variant="pills" 
