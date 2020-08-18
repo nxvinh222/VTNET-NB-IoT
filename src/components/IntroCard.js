@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Card, Button } from "react-bootstrap"
 import '../App.css';
 
-function IntroCards() {
+function IntroCard() {
 
     return (
         <Card>
@@ -21,4 +21,4 @@ function IntroCards() {
     )
 }
 
-export default IntroCards;
+export default IntroCard;
