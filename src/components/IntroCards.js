@@ -15,34 +15,40 @@ function IntroCards() {
         setData([
             {
                 title: "Narrowband-IoT",
-                text: " NB-IoT is the ideal connectivity solution if you need long-life batteries and a compact form factor. It’s especially good for applications that generate low data traffic or are deployed across wide geographic areas."
+                text: " NB-IoT is the ideal connectivity solution if you need long-life batteries and a compact form factor. It’s especially good for applications that generate low data traffic or are deployed across wide geographic areas.",
+                picture: "https://www.vodafone.com/business/media/image/1508863266699/640/651386824-h_800x400.jpg"
             },
             {
                 title: "Viettel Business",
-                text: "test"
-            },
-            {
-                title: "Viettel Business",
-                text: "test"
+                text: "test",
+                picture: "www.vodafone.com/business/media/image/1508875472122/640/shutterstock_1131955979_f_800x400.jpg"
             },
             {
                 title: "Narrowband-IoT",
-                text: " NB-IoT is the ideal connectivity solution if you need long-life batteries and a compact form factor. It’s especially good for applications that generate low data traffic or are deployed across wide geographic areas."
+                text: " NB-IoT is the ideal connectivity solution if you need long-life batteries and a compact form factor. It’s especially good for applications that generate low data traffic or are deployed across wide geographic areas.",
+                picture: "https://www.vodafone.com/business/media/image/1508863266699/640/651386824-h_800x400.jpg"
             },
             {
                 title: "Viettel Business",
-                text: "test"
+                text: "test",
+                picture: "www.vodafone.com/business/media/image/1508875472122/640/shutterstock_1131955979_f_800x400.jpg"
+            },
+            {
+                title: "Narrowband-IoT",
+                text: " NB-IoT is the ideal connectivity solution if you need long-life batteries and a compact form factor. It’s especially good for applications that generate low data traffic or are deployed across wide geographic areas.",
+                picture: "https://www.vodafone.com/business/media/image/1508863266699/640/651386824-h_800x400.jpg"
             },
             {
                 title: "Viettel Business",
-                text: "test"
+                text: "test",
+                picture: "www.vodafone.com/business/media/image/1508875472122/640/shutterstock_1131955979_f_800x400.jpg"
             }
         ])
 
     }, []);
 
     const allCard = data.map(cardInfo => (
-        <IntroCard title={cardInfo.title} text={cardInfo.text}/>
+        <IntroCard title={cardInfo.title} text={cardInfo.text} picture={cardInfo.picture}/>
     ))
 
     return (
