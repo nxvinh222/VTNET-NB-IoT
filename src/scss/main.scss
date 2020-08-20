@@ -1,0 +1,9 @@
+@import "../../node_modules/rfs/scss";
+
+$enable-responsive-font-sizes: true;
+
+@media (max-width: 767px) {
+    .carousel h3 {
+       font-size: 30px !important;
+       }
+ }

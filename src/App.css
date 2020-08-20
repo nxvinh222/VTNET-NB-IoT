@@ -46,10 +46,20 @@ body {
 }
 
 .carousel-top {
-  height: 226px
+  height: 250px
 }
 
 .hero-text-carousel {
   position: relative;
   margin-top: -2vh;
+}
+
+#carousel-top-button{
+  background-color: white;
+  border: none;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
 }
