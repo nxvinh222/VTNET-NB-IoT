@@ -15,23 +15,32 @@ body {
 
 
 
-.carousel {
+/* .carousel { */
   /* display: none; */
-  display: block;
+  /* display: block; */
   /* margin:-30.875% 0; */
   /* background-color: purple; */
   /* width: 50%; */
   /* padding: 0px; */
   /* margin-left: 50%; */
   /* transform: translate(-50%, -50%); */
-  position: absolute;
+  /* position: absolute; */
   /* margin-top: -20%; */
-  height: 50%;
-}
+  /* height: 50%; */
+/* } */
 
 
 #card-img-top {
   width: 100%;
   height: 15vw;
   object-fit: cover;
+}
+
+.carousel-top {
+  height: 226px
+}
+
+.hero-text-carousel {
+  position: relative;
+  margin-top: -70px;
 }

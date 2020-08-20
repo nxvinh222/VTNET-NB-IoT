@@ -13,7 +13,7 @@ function HomeScreen() {
         <div>
             <NavBar />
             <Banner />
-            {/* <Carousel /> */}
+            <Carousel />
             <IntroVideo />
             <Navigation />
             <IntroCards />
