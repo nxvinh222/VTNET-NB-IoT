@@ -39,13 +39,13 @@ function ControlledCarousel() {
                     className="d-block w-100"
                     src={itemInfo.picture}
                     alt="Slide"
-                    style={{width: "871px", height: "226px"}}
+                    style={{height: "226px"}}
                     />
                     <Carousel.Caption className="">
                         <h3 className="" style={{fontFamily: "arial"}}>{itemInfo.title}</h3>
                         <p className="lead" >{itemInfo.text}</p>
-                        <Button size="lg" href={itemInfo.href} id="carousel-top-button" active>
-                            Primary button
+                        <Button className="col-5 btn-block" href={itemInfo.href} id="carousel-top-button" active>
+                            Enter
                         </Button>{' '}
                     </Carousel.Caption>
             </Carousel.Item>
