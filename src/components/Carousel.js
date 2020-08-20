@@ -1,5 +1,5 @@
-import React, { useState } from "react"; 
-import { Carousel, Container } from "react-bootstrap"
+import React, { useState, useEffect } from "react"; 
+import { Carousel, Container, Button } from "react-bootstrap"
 // import CarouselItem from "./CarouselItem"
 import '../App.css';
 
@@ -7,41 +7,59 @@ const carouselPicture =
     "https://upload.wikimedia.org/wikipedia/commons/5/52/Golden_sky_%284080648531%29.jpg"
 
 function ControlledCarousel() {
+    //Init State
     const [index, setIndex] = useState(0);
+    const [data, setData] = useState([])
+
+    // ComponentDidMount
+    // Call API
+    useEffect(() => {
+        setData([
+            {
+                title: "Arjuna",
+                text: "Expanding sacred domain. Domain secured. Divine punishment enforcement limits... All approved. By the wrath of Shiva, here ends thy life. Pashupata!",
+                picture: "https://www.cdacollaborative.org/wp-content/uploads/2017/07/Biz-and-Peace-Carousel-Background-01.png",
+                href: "http://google.com"
+            },
+            {
+                title: "Altria Pendragon",
+                text: "Light, may you be released from the ends of the world. Split the heavens and tether the earth, anchor of the storm! Rhongomyniad!",
+                picture: "https://www.cdacollaborative.org/wp-content/uploads/2017/07/Biz-and-Peace-Carousel-Background-01.png",
+                href: "http://google.com"
+            }
+        ])
+    }, []);
     
+
+    // Map Carousel's data
+    const allItem = data.map((itemInfo) => (
+            <Carousel.Item className="carousel-top">
+                    <img
+                    className="d-block w-100"
+                    src={itemInfo.picture}
+                    alt="Slide"
+                    />
+                    <Carousel.Caption>
+                        <h3>{itemInfo.title}</h3>
+                        <p class="lead">{itemInfo.text}</p>
+                        <Button variant="primary" size="md" href={itemInfo.href} active>
+                            Primary button
+                        </Button>{' '}
+                    </Carousel.Caption>
+            </Carousel.Item>
+    )
+)
+
     const handleSelect = (selectedIndex, e) => {
-        console.log(selectedIndex)
         setIndex(selectedIndex);
     };
     
+
+    // Return all Carousel's items
     return (
         <Container className="hero-text-carousel">
             <Carousel activeIndex={index} onSelect={handleSelect}>
-                <Carousel.Item className="carousel-top">
-                    <img
-                    className="d-block w-100"
-                    src="https://i.pinimg.com/originals/f3/e6/d8/f3e6d8120c83c2d12897733a93a62a1f.jpg"
-                    alt="First slide"
-                    />
-                    <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item className="carousel-top">
-                    <img
-                    className="d-block w-100"
-                    src="https://i.pinimg.com/originals/f3/e6/d8/f3e6d8120c83c2d12897733a93a62a1f.jpg"
-                    alt="Second slide"
-                    />
-            
-                    <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                {/* <CarouselItem />
-                <CarouselItem /> */}
+                {allItem}
             </Carousel>
         </Container>
     );

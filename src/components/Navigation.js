@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react"; 
+import React, { Component, useState } from "react";
 import { Container, Row, Nav, Card, Button } from "react-bootstrap"
 import '../App.css';
 
@@ -12,8 +12,8 @@ function Navigation() {
     }
 
     const card_2 = {
-        title: "IoT is transforming industries everywhere2",
-        text: "Whatever industry you’re in, the potential benefits of IoT are immense. Leverage our expertise and experience in your sector to accelerate and de-risk your IoT initiatives."
+        title: "IoT is transforming industries everywhere",
+        text: "Heed my words, My will creates your body, And your sword creates my destiny. If you heed the Grail's call, And obey my will and reason, Then answer my summoning! I hereby swear, That I shall be all the good in the world, That I shall defeat . . . all evil in the world! Then let thine eyes be clouded, With the fog of turmoil and chaos, Thou, who art trapped in a cage of madness, And I, the summoner, who holds thy chains! Seventh heaven clad, And the great words of power, Come forth from the circle of bindings, Guardian of Scales!"
     }
 
     const card_3 = {
@@ -31,14 +31,14 @@ function Navigation() {
 
 
     return (
-        <Container> 
+        <Container>
             <Row>
                 <h2 class="col-sm-10 py-3 pt-md-5 pb-md-4 mx-auto text-center display-4">See how we’re transforming lives and businesses</h2>
-                
+
                 <Card className="col-lg-6 mx-auto border-0">
                     <Card.Header >
-                        <Nav 
-                            variant="tabs" 
+                        <Nav
+                            variant="tabs"
                             defaultActiveKey="card_1"
                             className="justify-content-center"
                         >
@@ -47,13 +47,13 @@ function Navigation() {
                             </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link className="infoLink" eventKey="card_2" href="#second" onSelect={(selectedKey) => setNavContent(card_2)}>Industries</Nav.Link>
-                            </Nav.Item>     
+                            </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link className="infoLink" eventKey="card_3" href="#third" onSelect={(selectedKey) => setNavContent(card_3)}>Why Viettel</Nav.Link>
-                            </Nav.Item> 
+                            </Nav.Item>
                             <Nav.Item>
                                 <Nav.Link className="infoLink" eventKey="card_4" href="#forth" onSelect={(selectedKey) => setNavContent(card_4)}>IoT platform</Nav.Link>
-                            </Nav.Item> 
+                            </Nav.Item>
                         </Nav>
                     </Card.Header>
                     <Card.Body>
@@ -62,12 +62,12 @@ function Navigation() {
                             {navContent.text}
                         </Card.Text>
                         <Button variant="primary">Go somewhere</Button>
-                        
+
                     </Card.Body>
-                    
+
                 </Card>
             </Row>
-        </Container> 
+        </Container>
     )
 }
 

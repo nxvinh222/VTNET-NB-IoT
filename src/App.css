@@ -12,6 +12,19 @@ body {
   position: relative;
 } 
 
+.hero-text {
+  position: relative;
+  color: white;
+}
+
+.hero-text-centered {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 
 
