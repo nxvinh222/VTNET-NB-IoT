@@ -1,18 +1,25 @@
-import React from "react"; 
+import React, { useEffect } from "react"; 
 import { Container, Card, Button, Col } from "react-bootstrap"
 import '../App.css';
 
 function IntroCard(props) {
 
-    return (
-        // <Col>
-        <Col>
-            <Card className="h-100 shadow p-3 mb-5 bg-white rounded">
+    useEffect(()=>{
+        console.log(123)
+    }, [])
 
+    return (
+
+        <Col className="mb-5">
+            <a href={props.href}>
+            <Card 
+                className="h-100 shadow p-1 bg-white rounded"
+            >
                 <Card.Img 
                     id="card-img-top"
                     variant="top" 
-                    src={props.picture} />
+                    src={props.picture} 
+                />
                 <Card.Body>
                 <Card.Title>
                     {props.title}
@@ -21,12 +28,13 @@ function IntroCard(props) {
                     {props.text}
                 </Card.Text>
                 </Card.Body>
-                <Card.Footer>
+                {/* <Card.Footer>
                    <small className="text-muted">Last updated 3 mins ago</small>
-                </Card.Footer>
+                </Card.Footer> */}
             </Card> 
+            </a>
         </Col>
-        // </Col>
+
 
     )
 }
