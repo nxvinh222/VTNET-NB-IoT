@@ -3,14 +3,11 @@ import { Button } from "react-bootstrap"
 import '../App.css';
 
 
-const logoUri =
-  "https://www.hlbank.com.vn/content/dam/vn-global/images/official_image/help-and-support/contact-us/contact%20_us_banner.jpg";
+// const logoUri =
+//   "https://www.hlbank.com.vn/content/dam/vn-global/images/official_image/help-and-support/contact-us/contact%20_us_banner.jpg";
 
 const logoUri2 =
   "https://tiptoplife.com.vn/wp-content/uploads/2018/07/Contact-banner.jpg";
-
-const carouselPicture =
-    "https://upload.wikimedia.org/wikipedia/commons/5/52/Golden_sky_%284080648531%29.jpg"
 
 
 class ContactBanner extends Component {

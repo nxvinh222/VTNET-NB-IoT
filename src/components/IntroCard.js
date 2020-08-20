@@ -1,17 +1,17 @@
 import React, { useEffect } from "react"; 
-import { Container, Card, Button, Col } from "react-bootstrap"
+import { Card, Col } from "react-bootstrap"
 import '../App.css';
 
 function IntroCard(props) {
 
     useEffect(()=>{
-        console.log(123)
+        console.log(props)
     }, [])
 
     return (
 
         <Col className="mb-5">
-            <a href={props.href}>
+            <a href={props.href} style={{ textDecoration: "none", color: "black" }}>
             <Card 
                 className="h-100 shadow p-1 bg-white rounded"
             >
