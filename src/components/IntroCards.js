@@ -59,7 +59,7 @@ function IntroCards() {
 
     return (
         <Container> 
-            
+                <h3 className="col-sm-10 pt-5 mt-3 pb-0 mb-0 mx-auto text-center" id="card-info-header">Explore our additional resources for greater insight</h3>
                 {/* px-3 py-3 pt-md-5 pb-md-4 mx-auto */}
                 <h2 className="video-header py-3 pt-lg-5 pb-lg-4 text-center"> </h2>
                 <CardDeck>

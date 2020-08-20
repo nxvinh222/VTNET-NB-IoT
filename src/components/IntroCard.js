@@ -4,10 +4,6 @@ import '../App.css';
 
 function IntroCard(props) {
 
-    useEffect(()=>{
-        console.log(props)
-    }, [])
-
     return (
 
         <Col className="mb-5">
