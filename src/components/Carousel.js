@@ -1,5 +1,6 @@
 import React, { useState } from "react"; 
 import { Carousel, Container } from "react-bootstrap"
+// import CarouselItem from "./CarouselItem"
 import '../App.css';
 
 const carouselPicture =
@@ -9,6 +10,7 @@ function ControlledCarousel() {
     const [index, setIndex] = useState(0);
     
     const handleSelect = (selectedIndex, e) => {
+        console.log(selectedIndex)
         setIndex(selectedIndex);
     };
     
@@ -38,6 +40,8 @@ function ControlledCarousel() {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
+                {/* <CarouselItem />
+                <CarouselItem /> */}
             </Carousel>
         </Container>
     );
