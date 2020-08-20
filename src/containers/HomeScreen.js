@@ -6,6 +6,7 @@ import IntroVideo from "../components/IntroVideo"
 import Carousel  from "../components/Carousel"
 import Footer  from "../components/Footer"
 import IntroCards from "../components/IntroCards"
+import ContactBanner from "../components/ContactBanner"
 
 function HomeScreen() {
 
@@ -17,6 +18,7 @@ function HomeScreen() {
             <IntroVideo />
             <Navigation />
             <IntroCards />
+            <ContactBanner />
             <Footer />
         </div>
     )

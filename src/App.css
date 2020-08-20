@@ -14,7 +14,7 @@ body {
 
 .hero-text {
   position: relative;
-  color: white;
+  color: white
 }
 
 .hero-text-centered {
@@ -24,6 +24,15 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.hero-text-contact {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
 
 
 
