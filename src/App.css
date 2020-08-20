@@ -17,7 +17,7 @@ body {
   color: white
 }
 
-.hero-text-centered {
+.hero-text-top {
   position: absolute;
   text-align: center;
   top: 50%;
@@ -37,19 +37,6 @@ body {
 
 
 
-/* .carousel { */
-  /* display: none; */
-  /* display: block; */
-  /* margin:-30.875% 0; */
-  /* background-color: purple; */
-  /* width: 50%; */
-  /* padding: 0px; */
-  /* margin-left: 50%; */
-  /* transform: translate(-50%, -50%); */
-  /* position: absolute; */
-  /* margin-top: -20%; */
-  /* height: 50%; */
-/* } */
 
 
 #card-img-top {
@@ -64,5 +51,5 @@ body {
 
 .hero-text-carousel {
   position: relative;
-  margin-top: -70px;
+  margin-top: -2vh;
 }

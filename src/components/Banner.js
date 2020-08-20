@@ -15,8 +15,8 @@ class Banner extends Component {
         <div className="hero-text">         
 
             <img className="col-12 p-0" src={logoUri} />
-                <div className="hero-text-contact text-center">
-                    <h1 className="display-4">IoT | Internet of Things</h1>
+                <div className="hero-text-top text-center">
+                    <h1 className="display-3" style={{fontSize : "5vw"}}>IoT | Internet of Things</h1>
                     <p>Viettel</p>
                 </div>
         </div>
