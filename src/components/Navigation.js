@@ -33,7 +33,7 @@ function Navigation() {
     return (
         <Container>
             <Row>
-                <h2 class="col-sm-10 py-3 pt-md-5 pb-md-4 mx-auto text-center display-4">See how we’re transforming lives and businesses</h2>
+                <h2 className="col-sm-10 py-3 pt-md-5 pb-md-4 mx-auto text-center display-4">See how we’re transforming lives and businesses</h2>
 
                 <Card className="col-lg-6 mx-auto border-0">
                     <Card.Header >
@@ -57,7 +57,7 @@ function Navigation() {
                         </Nav>
                     </Card.Header>
                     <Card.Body>
-                        <Card.Title class="font-weight-bold text-center">{navContent.title}</Card.Title>
+                        <Card.Title className="font-weight-bold text-center">{navContent.title}</Card.Title>
                         <Card.Text>
                             {navContent.text}
                         </Card.Text>

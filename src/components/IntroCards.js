@@ -53,15 +53,15 @@ function IntroCards() {
 
     }, []);
 
-    const allCard = data.map(cardInfo => (
-        <IntroCard title={cardInfo.title} text={cardInfo.text} picture={cardInfo.picture}/>
+    const allCard = data.map((cardInfo, i) => (
+        <IntroCard title={cardInfo.title} text={cardInfo.text} picture={cardInfo.picture} key={i}/>
     ))
 
     return (
         <Container> 
             
                 {/* px-3 py-3 pt-md-5 pb-md-4 mx-auto */}
-                <h2 class="video-header py-3 pt-lg-5 pb-lg-4 text-center"></h2>
+                <h2 className="video-header py-3 pt-lg-5 pb-lg-4 text-center"></h2>
                 <CardDeck>
                     <Row xs={1} md={2} lg={3}>
                         {allCard}

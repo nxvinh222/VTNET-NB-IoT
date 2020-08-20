@@ -33,8 +33,8 @@ function ControlledCarousel() {
     
 
     // Map Carousel's data
-    const allItem = data.map((itemInfo) => (
-            <Carousel.Item className="">
+    const allItem = data.map((itemInfo, i) => (
+            <Carousel.Item className="" key={i}>
                     <img
                     className="d-block w-100"
                     src={itemInfo.picture}

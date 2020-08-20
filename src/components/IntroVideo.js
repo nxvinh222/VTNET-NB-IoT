@@ -6,9 +6,9 @@ function IntroVideo() {
 
     return (
         <Container> 
-            <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-                <h1 class="display-4">Pricing</h1>
-                <p class="lead">Watch the video to see how Internet of Things (IoT) could transform and revolutionise every business</p>
+            <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+                <h1 className="display-4">Pricing</h1>
+                <p className="lead">Watch the video to see how Internet of Things (IoT) could transform and revolutionise every business</p>
             </div>
 
 
@@ -16,7 +16,7 @@ function IntroVideo() {
                     <Card.Body>
                         <Row>
                             <ResponsiveEmbed className='col-md-8' aspectRatio="16by9">
-                                <iframe  src="https://www.youtube.com/embed/392676Cbv28" allowfullscreen></iframe>
+                                <iframe  src="https://www.youtube.com/embed/392676Cbv28" allowFullScreen></iframe>
                             </ResponsiveEmbed>
                             {/* <Card.Title>Card Title</Card.Title> */}
                             <Card.Text  className='lead col-md-3 m-3'>
