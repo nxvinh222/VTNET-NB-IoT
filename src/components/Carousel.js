@@ -33,16 +33,16 @@ function ControlledCarousel() {
 
     // Map Carousel's data
     const allItem = data.map((itemInfo) => (
-            <Carousel.Item className="carousel-top">
+            <Carousel.Item className="carousel-top ">
                     <img
                     className="d-block w-100"
                     src={itemInfo.picture}
                     alt="Slide"
                     />
-                    <Carousel.Caption>
-                        <h3>{itemInfo.title}</h3>
-                        <p class="lead">{itemInfo.text}</p>
-                        <Button variant="primary" size="md" href={itemInfo.href} active>
+                    <Carousel.Caption className="">
+                        <h3 className="display-4" style={{fontSize : "8vw"}}>{itemInfo.title}</h3>
+                        <p class="lead" style={{fontSize : "2vw"}}>{itemInfo.text}</p>
+                        <Button variant="primary" size="md" href={itemInfo.href} style={{fontSize : "2vw"}} active>
                             Primary button
                         </Button>{' '}
                     </Carousel.Caption>
