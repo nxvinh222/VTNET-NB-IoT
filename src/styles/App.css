@@ -13,13 +13,6 @@
 
 
 /* Banner design */
-.hero-image { 
-
-  height: 10%;
-  width: 100%; 
-  position: relative;
-} 
-
 .hero-text {
   position: relative;
   color: white
@@ -28,6 +21,7 @@
 .hero-text-top {
   position: absolute;
   text-align: center;
+  white-space: nowrap;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
