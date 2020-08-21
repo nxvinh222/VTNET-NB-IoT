@@ -7,9 +7,9 @@ function NavBar() {
             <Navbar bg="light" expand="lg">
                 <Navbar.Brand href="#home">
                     <img
-                        src="./logo192.png"
-                        width="30"
-                        height="30"
+                        src={window.location.origin + '/viettel_logo.png'}
+                        // width="30"
+                        height="50vw"
                         className="d-inline-block align-top"
                         alt="Viettel logo"
                     />
