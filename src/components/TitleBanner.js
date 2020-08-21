@@ -10,7 +10,7 @@ class TitleBanner extends Component {
         <div className="" style={{ color: 'black', position: "relative"}}>     
             <div className="p-5" style={{backgroundColor: "#930800", color: "white"}}>
               <p className="display-4 text-center" >Did you know?</p>
-              <Row>
+              <Row sm={1} md={3}>
                 <div className="col-4 text-center">
                   <i className="far fa-star fa-3x"></i>
                   <p className="lead mt-3">Three Wise Men of the East. The Great God of the Norse. The Fruit of Wisdom. My intellect, my omnipotence, surpasses all forms of wisdom! Uomo Universale!</p>

@@ -1,13 +1,21 @@
+/* TopNav design */
 
-
-body {
-  margin: 0;
+.top-nav-item {
+  border: none !important;
+  border-radius: 0 !important;
+  color: white;
+  font-size: 12px;
 }
 
+.top-nav-item:hover {
+  background-color: white;
+}
+
+
+/* Banner design */
 .hero-image { 
 
   height: 10%;
-  /* filter: blur(5px);  */
   width: 100%; 
   position: relative;
 } 
@@ -25,6 +33,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
+/* ContactBanner design */
 .hero-text-contact {
   position: absolute;
   text-align: left;

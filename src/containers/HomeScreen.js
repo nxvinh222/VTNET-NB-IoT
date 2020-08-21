@@ -1,4 +1,5 @@
 import React from "react"
+import TopNav from "../components/TopNav"
 import NavBar from "../components/NavBar"
 import Banner from "../components/Banner"
 import Navigation from "../components/Navigation"
@@ -14,6 +15,7 @@ function HomeScreen() {
 
     return(
         <div>
+            <TopNav />
             <NavBar />
             <Banner />
             <Carousel />

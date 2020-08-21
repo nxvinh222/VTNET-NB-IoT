@@ -1,5 +1,9 @@
 
-
+@media (max-width: 1000px) {
+    #top-nav {
+    display: none;
+    }
+}
 
 $theme-colors: (
   primary: #930800,
