@@ -9,7 +9,7 @@ class TitleBanner extends Component {
     return (
         <div className="" style={{ color: 'black', position: "relative"}}>     
             <div className="p-5" style={{backgroundColor: "#930800", color: "white"}}>
-                  <p className="display-4" >Interested in our IoT solutions?</p>
+                  <p className="display-4" >Did you know?</p>
                   <p className="lead">Contact us and one of our IoT specialists will call you back</p>
             </div>
 

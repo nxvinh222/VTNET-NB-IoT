@@ -20,7 +20,7 @@ class ContactBanner extends Component {
             <div className="p-5" style={{backgroundColor: "#00697d", color: "white"}}>
                   <p className="display-4" >Interested in our IoT solutions?</p>
                   <p className="lead">Contact us and one of our IoT specialists will call you back</p>
-                  <Button className="col-md-9 col-lg-3" variant="primary" size="md" href="#">
+                  <Button className="col-md-9 col-lg-3" variant="danger" size="md" href="#">
                       Contact Us!
                   </Button>{' '}
 
