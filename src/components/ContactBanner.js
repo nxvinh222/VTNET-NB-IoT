@@ -1,5 +1,5 @@
 import React, { Component } from "react"; 
-import { Button } from "react-bootstrap"
+import { Button, Row } from "react-bootstrap"
 import '../App.css';
 
 
@@ -14,14 +14,14 @@ class ContactBanner extends Component {
   render() {
     return (
         // <br></br>
-        <div className="hero-text" style={{ color: 'black' }}>     
-            <img className="col-12 p-0 pt-3" src={logoUri2} style={{ height: '250px'}}/>
-            <div className="hero-text-contact">
-                <h2 className="">Interested in our IoT solutions?</h2>
-                <p className="">Contact us and one of our IoT specialists will call you back</p>
-                <Button variant="danger" size="md" href="#" active>
-                    Contact Us!
-                </Button>{' '}
+        <div className="" style={{ color: 'black', position: "relative"}}>     
+            {/* <img className="container-fluid col-md-0 p-0 pt-3" src={logoUri2} style={{ height: '250px'}}/> */}
+            <div className="p-5" style={{backgroundColor: "#00697d", color: "white"}}>
+                  <p className="display-4" >Interested in our IoT solutions?</p>
+                  <p className="lead">Contact us and one of our IoT specialists will call you back</p>
+                  <Button className="col-md-9 col-lg-3" variant="danger" size="md" href="#" active>
+                      Contact Us!
+                  </Button>{' '}
             </div>
 
         </div>

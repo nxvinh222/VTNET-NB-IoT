@@ -27,10 +27,10 @@ body {
 
 .hero-text-contact {
   position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 25%;
-  transform: translate(-50%, -50%);
+  text-align: left;
+  /* top: 25%; */
+  /* left: 25%; 
+  transform: translate(-50%, -50%); */
 }
 
 
