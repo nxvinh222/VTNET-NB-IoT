@@ -11,11 +11,11 @@ function IntroVideo() {
             </div>
 
 
-                <Card className="col-lg-9 mx-auto p-3 shadow p-3 mb-5  bg-white rounded">
-                    <Card.Body>
-                        <Row>
+                <Card className="col-lg-9 mx-auto shadow bg-white rounded">
+                    <Card.Body className="p-0">
+                        <Row className="">
                             <ResponsiveEmbed className='col-md-8' aspectRatio="16by9">
-                                <iframe  src="https://www.youtube.com/embed/392676Cbv28" allowFullScreen></iframe>
+                                <iframe  src="https://www.youtube.com/embed/392676Cbv28" style={{height: "100%"}} allowFullScreen></iframe>
                             </ResponsiveEmbed>
                             {/* <Card.Title>Card Title</Card.Title> */}
                             <Card.Text  className='lead col-md-3 m-3'>
