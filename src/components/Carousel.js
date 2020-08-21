@@ -38,8 +38,8 @@ function ControlledCarousel() {
                     alt="Slide"
                     style={{height: "226px"}}
                     />
-                    <Carousel.Caption className="">
-                        <h3 className="" style={{fontFamily: "arial"}}>{itemInfo.title}</h3>
+                    <Carousel.Caption className="" style={{height: "100%"}}>
+                        <h3 className="pt-3" style={{fontFamily: "arial"}}>{itemInfo.title}</h3>
                         <p className="lead" >{itemInfo.text}</p>
                         <Button className="col-5 btn-block" size="lg" href={itemInfo.href} id="carousel-top-button" active>
                             Enter
