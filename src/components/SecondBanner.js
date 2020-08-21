@@ -1,6 +1,5 @@
 import React, { Component } from "react"; 
 import { Breadcrumb } from "react-bootstrap"
-import '../App.css';
 
 
 const logoUri =

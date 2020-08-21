@@ -1,6 +1,5 @@
 import React from "react"; 
 import { Container, ResponsiveEmbed, Card, Button, Row } from "react-bootstrap"
-import '../App.css';
 
 function IntroVideo() {
 

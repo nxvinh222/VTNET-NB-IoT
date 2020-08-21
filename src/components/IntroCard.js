@@ -1,6 +1,5 @@
 import React, { useEffect } from "react"; 
 import { Card, Col } from "react-bootstrap"
-import '../App.css';
 
 function IntroCard(props) {
 

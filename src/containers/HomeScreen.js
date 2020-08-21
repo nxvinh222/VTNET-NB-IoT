@@ -8,6 +8,7 @@ import Footer  from "../components/Footer"
 import IntroCards from "../components/IntroCards"
 import ContactBanner from "../components/ContactBanner"
 import SecondBanner from "../components/SecondBanner"
+import TitleBanner from "../components/TitleBanner"
 
 function HomeScreen() {
 
@@ -21,6 +22,7 @@ function HomeScreen() {
             <Navigation />
             <IntroCards />
             <ContactBanner />
+            <TitleBanner />
             <Footer />
         </div>
     )
