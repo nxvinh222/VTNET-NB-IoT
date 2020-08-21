@@ -41,7 +41,7 @@ function ControlledCarousel() {
                     <Carousel.Caption className="">
                         <h3 className="" style={{fontFamily: "arial"}}>{itemInfo.title}</h3>
                         <p className="lead" >{itemInfo.text}</p>
-                        <Button className="col-6 btn-block" href={itemInfo.href} id="carousel-top-button" active>
+                        <Button className="col-5 btn-block" size="lg" href={itemInfo.href} id="carousel-top-button" active>
                             Enter
                         </Button>{' '}
                     </Carousel.Caption>
