@@ -28,7 +28,7 @@ function NavBar() {
                     </Nav>
                     <Form inline>
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                    <Button variant="outline-success">Search</Button>
+                    <Button variant="primary">Search</Button>
                     </Form>
                 </Navbar.Collapse>
             </Navbar>              
