@@ -5,10 +5,10 @@ function Footer() {
 
     return (
             <footer className="pt-4 pt-md-5 bg-dark" style={{color: "white"}}>
-                <div className="row">
+                <div className="container row">
                     <div className="col-12 col-md">
-                        <img className="mb-2" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24" />
-                        <small className="d-block mb-3 text-muted">&copy; 2017-2020</small>
+                        <img className="mb-2" src={window.location.origin + '/Logo_Viettel.svg'} alt="" width="24" height="24" />
+                        <small className="d-block mb-3 text-muted">&copy; 2001-2020</small>
                     </div>
                     <div className="col-6 col-md">
                         <h5>Features</h5>
