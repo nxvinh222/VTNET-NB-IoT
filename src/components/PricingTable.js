@@ -18,18 +18,18 @@ function PricingTable() {
             detailsText: "D'Éon was born at the Hôtel d'Uzès in Tonnerre, Burgundy, into a poor noble family. D'Éon's father, Louis d'Éon de Beaumont, was an attorney and director of the king's dominions, later mayor of Tonnerre and sub-delegate of the intendant of the généralité of Paris."
         },
         {
-            title: "Fleur de Lis",
-            titleIntro: "May the Royal Family's Lily be eternal",
-            price: 1000000,
-            detailsList: ["Bee-compatible slot", "M0+ processor", "Arduino IDE programmable", "Energy efficient", "Solar charge controller"],
-            detailsText: "D'Éon was born at the Hôtel d'Uzès in Tonnerre, Burgundy, into a poor noble family. D'Éon's father, Louis d'Éon de Beaumont, was an attorney and director of the king's dominions, later mayor of Tonnerre and sub-delegate of the intendant of the généralité of Paris."
+            title: "Enuma Elish",
+            titleIntro: "I will awaken the breath of the planet, for I walk with humanity.",
+            price: 3000000,
+            detailsList: ["Bee-compatible slot", "Built-in GPS, Arduino IDE programmable, Magnetometer", "Free Universal Tracker software", "Energy efficient", "Solar charge controller"],
+            detailsText: "Enkidu (𒂗𒆠𒄭 EN.KI.DU10), was a legendary figure in ancient Mesopotamian mythology, wartime comrade and friend of king Gilgamesh. Their exploits were composed in Sumerian poems and in the Akkadian Epic of Gilgamesh, written during the 2nd millennium BC."
         },
         {
-            title: "Fleur de Lis",
-            titleIntro: "May the Royal Family's Lily be eternal",
-            price: 1000000,
-            detailsList: ["Bee-compatible slot", "M0+ processor", "Arduino IDE programmable", "Energy efficient", "Solar charge controller"],
-            detailsText: "D'Éon was born at the Hôtel d'Uzès in Tonnerre, Burgundy, into a poor noble family. D'Éon's father, Louis d'Éon de Beaumont, was an attorney and director of the king's dominions, later mayor of Tonnerre and sub-delegate of the intendant of the généralité of Paris."
+            title: "Luminosité Eternelle",
+            titleIntro: "Oh flag of mine, protect our comrades",
+            price: 3500000,
+            detailsList: ["NB-IoT, LTE-M and 2G fallback enabled*", "Built-in GPS, Accelerometer, Magnetometer, Antenna", "Arduino IDE programmable", "Free Universal Tracker software", "Energy efficient"],
+            detailsText: "Joan of Arc (French: Jeanne d'Arc[3][4] pronounced [ʒan daʁk]; c. 1412 – 30 May 1431),[5] nicknamed \"The Maid of Orléans\" (French: La Pucelle d'Orléans), is considered a heroine of France for her role during the Lancastrian phase of the Hundred Years' War, and was canonized as a Roman Catholic saint."
         }
     ])
     }, [])
