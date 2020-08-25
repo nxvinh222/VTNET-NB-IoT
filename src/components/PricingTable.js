@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Row, CardDeck, Card } from "react-bootstrap"
+import { Container, Row, CardDeck, Card, Button } from "react-bootstrap"
 
 function PricingTable() {
     return (
@@ -69,8 +69,10 @@ function PricingTable() {
                                     </span>
                                 </li>
                             </ul>
+                            
+                            <Button variant="primary">Get Started</Button>{' '}
 
-                            <Card.Text style={{color: "#707070"}}>
+                            <Card.Text  className="ml-5 mr-5" style={{color: "#707070", fontSize: "13px"}}>
                                 This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This content is a little bit longer.
                             </Card.Text>
