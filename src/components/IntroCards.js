@@ -7,9 +7,11 @@ import IntroCard from "./IntroCard"
 
 function IntroCards() {
 
-    // state
+    // Create data state
     const [data, setData] = useState([])
 
+    // ComponentDidMount
+    // Call API here
     useEffect(() => {
         // Update the document title using the browser API
         setData([
