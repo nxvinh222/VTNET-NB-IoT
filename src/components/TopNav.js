@@ -8,7 +8,7 @@ function TovNav() {
                 <Nav.Link disabled></Nav.Link>
             </Nav.Item>
             <Nav.Item as="li">
-                <Nav.Link className="top-nav-item" eventKey="link-1">Viettel.com.vn</Nav.Link>
+                <Nav.Link className="top-nav-item" eventKey="link-1" href="http://viettel.com.vn">Viettel.com.vn</Nav.Link>
             </Nav.Item>
             <Nav.Item as="li">
                 <Nav.Link className="top-nav-item" eventKey="link-2">Viettel Business</Nav.Link>
