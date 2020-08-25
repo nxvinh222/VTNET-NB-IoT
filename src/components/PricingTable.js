@@ -41,9 +41,9 @@ function PricingTable() {
 
             <CardDeck>
                 <Row sm={1} lg={3}>
-                    <PricingTableFeature />
-                    <PricingTableFeature />
-                    <PricingTableFeature />
+                    <PricingTableFeature data={data[0]}/>
+                    <PricingTableFeature data={data[1]}/>
+                    <PricingTableFeature data={data[2]}/>
                 </Row>
 
             </CardDeck>
