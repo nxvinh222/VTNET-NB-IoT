@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { Breadcrumb } from "react-bootstrap"
 
 
-const logoUri =
-  "https://www.vodafone.com/business/media/image/1508862781296/640/251121730-h_800x400.jpg";
+// const logoUri =
+//   "https://www.vodafone.com/business/media/image/1508862781296/640/251121730-h_800x400.jpg";
 
 
 

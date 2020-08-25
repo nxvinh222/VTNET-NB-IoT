@@ -15,7 +15,7 @@ function IntroVideo() {
                     <Card.Body className="p-0">
                         <Row className="">
                             <ResponsiveEmbed className='col-md-8' aspectRatio="16by9">
-                                <iframe  src="https://www.youtube.com/embed/392676Cbv28" style={{height: "100%"}} allowFullScreen></iframe>
+                                <iframe title="introVideo" src="https://www.youtube.com/embed/392676Cbv28" style={{height: "100%"}} allowFullScreen></iframe>
                             </ResponsiveEmbed>
                             {/* <Card.Title>Card Title</Card.Title> */}
                             <Card.Text  className='lead col-md-3 m-3'>

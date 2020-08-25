@@ -1,5 +1,5 @@
 import React, { Component } from "react"; 
-import { Button, Row } from "react-bootstrap"
+import { Button } from "react-bootstrap"
 
 
 
@@ -7,8 +7,8 @@ import { Button, Row } from "react-bootstrap"
 // const logoUri =
 //   "https://www.hlbank.com.vn/content/dam/vn-global/images/official_image/help-and-support/contact-us/contact%20_us_banner.jpg";
 
-const logoUri2 =
-  "https://tiptoplife.com.vn/wp-content/uploads/2018/07/Contact-banner.jpg";
+// const logoUri2 =
+//   "https://tiptoplife.com.vn/wp-content/uploads/2018/07/Contact-banner.jpg";
 
 
 class ContactBanner extends Component {

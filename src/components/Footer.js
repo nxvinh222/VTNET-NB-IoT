@@ -1,5 +1,5 @@
 import React from "react"; 
-import { Container } from "react-bootstrap"
+// import { Container } from "react-bootstrap"
 
 function Footer() {
 
@@ -13,30 +13,30 @@ function Footer() {
                     <div className="col-6 col-md">
                         <h5>Features</h5>
                         <ul className="list-unstyled text-small">
-                        <li><a className="text-muted" href="#">Cool stuff</a></li>
-                        <li><a className="text-muted" href="#">Random feature</a></li>
-                        <li><a className="text-muted" href="#">Team feature</a></li>
-                        <li><a className="text-muted" href="#">Stuff for developers</a></li>
-                        <li><a className="text-muted" href="#">Another one</a></li>
-                        <li><a className="text-muted" href="#">Last time</a></li>
+                        <li><a className="text-muted" href="https://www.google.com/">Cool stuff</a></li>
+                        <li><a className="text-muted" href="https://www.google.com/">Random feature</a></li>
+                        <li><a className="text-muted" href="https://www.google.com/">Team feature</a></li>
+                        <li><a className="text-muted" href="https://www.google.com/">Stuff for developers</a></li>
+                        <li><a className="text-muted" href="https://www.google.com/">Another one</a></li>
+                        <li><a className="text-muted" href="https://www.google.com/">Last time</a></li>
                         </ul>
                     </div>
                     <div className="col-6 col-md">
                         <h5>Resources</h5>
                         <ul className="list-unstyled text-small">
-                        <li><a className="text-muted" href="#">Resource</a></li>
-                        <li><a className="text-muted" href="#">Resource name</a></li>
-                        <li><a className="text-muted" href="#">Another resource</a></li>
-                        <li><a className="text-muted" href="#">Final resource</a></li>
+                        <li><a className="text-muted" href="https://www.google.com/">Resource</a></li>
+                        <li><a className="text-muted" href="https://www.google.com/">Resource name</a></li>
+                        <li><a className="text-muted" href="https://www.google.com/">Another resource</a></li>
+                        <li><a className="text-muted" href="https://www.google.com/">Final resource</a></li>
                         </ul>
                     </div>
                     <div className="col-6 col-md">
                         <h5>About</h5>
                         <ul className="list-unstyled text-small">
-                        <li><a className="text-muted" href="#">Team</a></li>
-                        <li><a className="text-muted" href="#">Locations</a></li>
-                        <li><a className="text-muted" href="#">Privacy</a></li>
-                        <li><a className="text-muted" href="#">Terms</a></li>
+                        <li><a className="text-muted" href="https://www.google.com/">Team</a></li>
+                        <li><a className="text-muted" href="https://www.google.com/">Locations</a></li>
+                        <li><a className="text-muted" href="https://www.google.com/">Privacy</a></li>
+                        <li><a className="text-muted" href="https://www.google.com/">Terms</a></li>
                         </ul>
                     </div>
                 </div>
