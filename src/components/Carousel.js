@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"; 
+import React, { useState, useEffect } from "react";
 import { Carousel, Container, Button } from "react-bootstrap"
 
 // const carouselPicture =
@@ -27,43 +27,43 @@ function ControlledCarousel() {
             }
         ])
     }, []);
-    
+
 
     // Map Carousel's data
     const allItem = data.map((itemInfo, i) => (
-            <Carousel.Item className="" key={i}>
-                    {/* <img
+        <Carousel.Item className="" key={i}>
+            {/* <img
                     className="d-block w-100"
                     src={itemInfo.picture}
                     alt="Slide"
                     style={{height: "226px"}}
                     /> */}
-                    <div
-                    className=""
-                    style={{height: "226px", backgroundColor: "#5e2750"}}
-                    />
-                    <Carousel.Caption className="" style={{height: "100%"}}>
-                        <h3 className="pt-3" style={{fontFamily: "arial"}}>{itemInfo.title}</h3>
-                        <p className="lead" >{itemInfo.text}</p>
-                        <Button className="col-5 btn-block" size="lg" href={itemInfo.href} id="carousel-top-button" active>
-                            Enter
+            <div
+                className=""
+                style={{ height: "226px", backgroundColor: "#5e2750" }}
+            />
+            <Carousel.Caption className="" style={{ height: "100%" }}>
+                <h3 className="pt-3" style={{ fontFamily: "arial" }}>{itemInfo.title}</h3>
+                <p className="lead" >{itemInfo.text}</p>
+                <Button className="col-5 btn-block" size="lg" href={itemInfo.href} id="carousel-top-button" active>
+                    Enter
                         </Button>{' '}
-                    </Carousel.Caption>
-            </Carousel.Item>
+            </Carousel.Caption>
+        </Carousel.Item>
     )
-)
+    )
 
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
     };
-    
+
 
     // Return all Carousel's items
     return (
         <Container className="hero-text-carousel col-sm-11 col-md-9 col-lg-7">
             <Carousel activeIndex={index} onSelect={handleSelect}>
                 {allItem}
-                
+
             </Carousel>
         </Container>
     );

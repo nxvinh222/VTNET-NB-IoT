@@ -11,10 +11,6 @@ import ContactBanner from "../components/ContactBanner"
 import TitleBanner from "../components/TitleBanner"
 import Footer  from "../components/Footer"
 
-
-
-
-
 function HomeScreen() {
 
     return(
@@ -22,10 +18,10 @@ function HomeScreen() {
             <TopNav />
             <NavBar />
             <Banner />
-            <Carousel />
+            {/* <Carousel />
             <SecondBanner />
             <IntroVideo />
-            <Navigation />
+            <Navigation /> */}
             <IntroCards />
             <ContactBanner />
             <TitleBanner />

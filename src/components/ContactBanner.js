@@ -1,8 +1,5 @@
-import React, { Component } from "react"; 
+import React, { Component } from "react";
 import { Button } from "react-bootstrap"
-
-
-
 
 // const logoUri =
 //   "https://www.hlbank.com.vn/content/dam/vn-global/images/official_image/help-and-support/contact-us/contact%20_us_banner.jpg";
@@ -14,19 +11,15 @@ import { Button } from "react-bootstrap"
 class ContactBanner extends Component {
   render() {
     return (
-        // <br></br>
-        <div className="" style={{ color: 'black', position: "relative"}}>     
-            {/* <img className="container-fluid col-md-0 p-0 pt-3" src={logoUri2} style={{ height: '250px'}}/> */}
-            <div className="p-5" style={{backgroundColor: "#00697d", color: "white"}}>
-                  <p className="display-4" >Interested in our IoT solutions?</p>
-                  <p className="lead">Contact us and one of our IoT specialists will call you back</p>
-                  <Button className="" variant="danger" size="lg" href="#">
-                      Contact Us!
-                  </Button>{' '}
-
-            </div>
-
+      <div className="" style={{ color: 'black', position: "relative" }}>
+        <div className="p-5" style={{ backgroundColor: "#00697d", color: "white" }}>
+          <p className="display-4" >Interested in our IoT solutions?</p>
+          <p className="lead">Contact us and one of our IoT specialists will call you back</p>
+          <Button className="" variant="danger" size="lg" href="#">
+            Contact Us!
+          </Button>{' '}
         </div>
+      </div>
     );
   }
 }

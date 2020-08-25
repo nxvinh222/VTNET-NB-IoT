@@ -2,7 +2,7 @@ import React from "react"
 import { Nav } from 'react-bootstrap'
 
 function TovNav() {
-    return(
+    return (
         <Nav id="top-nav" variant="tabs" defaultActiveKey="link-2" as="ul" className="bg-dark border-0">
             <Nav.Item as="li">
                 <Nav.Link disabled></Nav.Link>
