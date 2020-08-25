@@ -39,11 +39,9 @@ function ControlledCarousel() {
                     style={{height: "226px"}}
                     /> */}
                     <div
-                    className="d-block w-100"
+                    className=""
                     style={{height: "226px", backgroundColor: "#5e2750"}}
-                    >
-                    a
-                    </div>
+                    />
                     <Carousel.Caption className="" style={{height: "100%"}}>
                         <h3 className="pt-3" style={{fontFamily: "arial"}}>{itemInfo.title}</h3>
                         <p className="lead" >{itemInfo.text}</p>
