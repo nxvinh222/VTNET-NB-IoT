@@ -21,7 +21,7 @@ function HomeScreen() {
         <div>
             <TopNav />
             <NavBar />
-            <Banner />
+            <Banner bannerText="IoT | Internet of Things"/>
             <Carousel />
             <SecondBanner />
             <IntroVideo />

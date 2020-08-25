@@ -18,7 +18,7 @@ function HomeScreen() {
         <div>
             <TopNav />
             <NavBar />
-            <Banner />
+            <Banner bannerText="TAKE THE DEVELOPMENT IN-HOUSE"/>
             <PricingTable />
             <IntroCards />
             <ContactBanner />
