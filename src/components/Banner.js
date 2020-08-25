@@ -14,8 +14,7 @@ function Banner(props) {
       <div className="hero-text">         
           <img className="col-12 p-0" src={logoUri} style={{minHeight: "275px",   objectFit: "cover"}}  alt="hero banner"/>
           <div className="hero-text-top text-center">
-              <h1 className="display-3 text-center" id="hero-text-detail">{props.bannerText}</h1>
-              {/* <p>Viettel</p> */}
+              <h1 className="display-3 text-center" id="hero-text-detail" >{props.bannerText}</h1>
           </div>
       </div>
   );
