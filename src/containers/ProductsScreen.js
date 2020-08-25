@@ -10,6 +10,7 @@ import IntroCards from "../components/IntroCards"
 import ContactBanner from "../components/ContactBanner"
 import TitleBanner from "../components/TitleBanner"
 import Footer  from "../components/Footer"
+import PricingTable from "../components/PricingTable"
 
 function HomeScreen() {
 
@@ -18,10 +19,7 @@ function HomeScreen() {
             <TopNav />
             <NavBar />
             <Banner />
-            {/* <Carousel />
-            <SecondBanner />
-            <IntroVideo />
-            <Navigation /> */}
+            <PricingTable />
             <IntroCards />
             <ContactBanner />
             <TitleBanner />
