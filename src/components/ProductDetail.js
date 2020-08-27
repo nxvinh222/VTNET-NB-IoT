@@ -5,6 +5,7 @@ function InsideProduct (props) {
     // State
     const [quantity, setQuantity] = useState(1)
 
+
     const handleTextChange = (event) => {
         setQuantity(event.target.value)
         console.log(quantity);
@@ -76,6 +77,43 @@ function InsideProduct (props) {
                                 </div>
                                 <Button className="col-3 m-4" href="#" variant="danger">Add to Card</Button>{' '}
                           
+                        </div>
+                    </div>
+                </Row>
+                <Row>
+                    <div className="owl-carousel">
+                        <div className="item">
+                        <h2>Swipe</h2>
+                        </div>
+                        <div className="item">
+                        <h2>Drag</h2>
+                        </div>
+                        <div className="item">
+                        <h2>Responsive</h2>
+                        </div>
+                        <div className="item">
+                        <h2>CSS3</h2>
+                        </div>
+                        <div className="item">
+                        <h2>Fast</h2>
+                        </div>
+                        <div className="item">
+                        <h2>Easy</h2>
+                        </div>
+                        <div className="item">
+                        <h2>Free</h2>
+                        </div>
+                        <div className="item">
+                        <h2>Upgradable</h2>
+                        </div>
+                        <div className="item">
+                        <h2>Tons of options</h2>
+                        </div>
+                        <div className="item">
+                        <h2>Infinity</h2>
+                        </div>
+                        <div className="item">
+                        <h2>Auto Width</h2>
                         </div>
                     </div>
                 </Row>
