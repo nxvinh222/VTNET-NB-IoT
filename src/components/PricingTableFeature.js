@@ -5,12 +5,12 @@ function PricingTableFeature(props) {
 
     return (
         props.data ? (
-            <Col>
+            <Col className="price-table-column">
                 <Card className="border-0 text-center">
                     {/* Title */}
                     <div className="price-table-title">
                         <Card.Body className="text-light bg-dark" style={{minHeight: "110px"}}>
-                            <div className="ml-5 mr-5">
+                            <div className="mx-2">
                                 <Card.Title>{props.data.title}</Card.Title>
                                 <Card.Text style={{ fontSize: "0.7em" }}>{props.data.titleIntro}</Card.Text>
                             </div>

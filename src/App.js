@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route} from 'react-router-dom';
 import HomeScreen from './containers/HomeScreen';
 import ProductsScreen from './containers/ProductsScreen';
-import InsideProductScreen from './containers/InsideProductScreen';
+import ProductDetailScreen from './containers/ProductDetailScreen';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
         <div className="App">
           <Route exact path="/" render={(props) => <HomeScreen />} />
           <Route exact path="/products" render={(props) => <ProductsScreen />} />
-          <Route exact path="/products/1" render={(props) => <InsideProductScreen />} />          
+          <Route exact path="/products/1" render={(props) => <ProductDetailScreen />} />          
         </div>
       </BrowserRouter>
     </div>
