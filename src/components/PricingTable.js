@@ -40,7 +40,7 @@ function PricingTable() {
             <p className="lead text-center">Browse a range of development boards we offer to create and scale your own projects. Don’t worry – we hold the intellectual property so a production is always possible! Here we highlight a few popular boards, but a range of boards can be found on our store. We offer business discounts, check it out.</p>
 
             <CardDeck>
-                <Row sm={1} lg={3}>
+                <Row md={1} lg={3} >
                     <PricingTableFeature data={data[0]}/>
                     <PricingTableFeature data={data[1]}/>
                     <PricingTableFeature data={data[2]}/>
