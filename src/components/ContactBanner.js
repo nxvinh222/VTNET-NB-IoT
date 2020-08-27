@@ -9,22 +9,22 @@ import { Button, Container } from "react-bootstrap"
 
 
 class ContactBanner extends Component {
-  render() {
-    return (
-
-      <div className="contact-banner" style={{ color: 'black', position: "relative" }}>
-        <div className="p-5" style={{ backgroundColor: "#00697d", color: "white" }}>
-          <Container>
-            <p className="display-4" >Interested in our IoT solutions?</p>
-            <p className="lead">Contact us and one of our IoT specialists will call you back</p>
-            <Button className="" variant="danger" size="lg" href="#">
-              Contact Us!
+	render() {
+		return (
+			
+			<div className="contact-banner" style={{ color: 'black', position: "relative" }}>
+				<div className="p-5" style={{ backgroundColor: "#00697d", color: "white" }}>
+					<Container>
+						<p className="display-4" >Interested in our IoT solutions?</p>
+						<p className="lead">Contact us and one of our IoT specialists will call you back</p>
+						<Button className="" variant="danger" size="lg" href="#">
+							Contact Us!
             </Button>{' '}
-          </Container>
-        </div>
-      </div>
-    );
-  }
+					</Container>
+				</div>
+			</div>
+		);
+	}
 }
 
 

@@ -24,7 +24,7 @@ function PricingTableFeature(props) {
                             <Card.Text className="mb-0" style={{ color: "#b7b4b4", fontSize: "19px" }}>
                                 Starting at
                             </Card.Text>
-                            <Card.Title className="" style={{ fontSize: "35px" }}>{props.data.price.toLocaleString()}<sup>Đ</sup></Card.Title>
+                            <Card.Title className="price-font" style={{ fontSize: "35px"}}>{props.data.price.toLocaleString()}<sup>₫</sup></Card.Title>
                             {/* Detail */}
                             
                             <ul className="price-table-features pl-0 px-2" style={{
