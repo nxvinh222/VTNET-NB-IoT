@@ -70,3 +70,8 @@
   border-top-width: 2px;
   border-top-style: solid;
 }
+
+/* check circle icon */
+.fa-check-circle {
+  color: green;
+}

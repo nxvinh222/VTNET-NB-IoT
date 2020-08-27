@@ -12,6 +12,12 @@
     }
 }
 
+@media (min-width: 1000px) {
+    .price-table-features {
+        min-height: 320px;
+    }
+}
+
 
 
 $theme-colors: (

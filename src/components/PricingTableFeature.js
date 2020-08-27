@@ -24,40 +24,39 @@ function PricingTableFeature(props) {
                         <Card.Title className="" style={{ fontSize: "35px" }}>{props.data.price.toLocaleString()}<sup>Đ</sup></Card.Title>
                         {/* Detail */}
                         
-
-                        <ul className="price-table-features pl-0 ml-5 mr-5" style={{
+                        <ul className="price-table-features pl-0 px-2" style={{
                             listStyleType: "none",
                             color: "#777777"
                         }}>
-                            <li className="mt-2 mb-2">
+                            <li className="my-3">
                                 <i className="far fa-check-circle mr-1"></i>
                                 <span>
                                     {props.data.detailsList[0]}
                                 </span>
                             </li>
-                            <div className="price-detail-top-border"></div>
-                            <li className="mt-2 mb-2">
+                            <div className="price-detail-top-border px-2"></div>
+                            <li className="my-3">
                                 <i className="far fa-check-circle mr-1"></i>
                                 <span>
                                     {props.data.detailsList[1]}
                                 </span>
                             </li>
                             <div className="price-detail-top-border"></div>
-                            <li className="mt-2 mb-2">
+                            <li className="my-3">
                                 <i className="far fa-check-circle mr-1"></i>
                                 <span>
                                     {props.data.detailsList[2]}
                             </span>
                             </li>
                             <div className="price-detail-top-border"></div>
-                            <li className="mt-2 mb-2">
+                            <li className="my-3">
                                 <i className="far fa-check-circle mr-1"></i>
                                 <span>
                                     {props.data.detailsList[3]}
                             </span>
                             </li>
                             <div className="price-detail-top-border"></div>
-                            <li className="mt-2 mb-2">
+                            <li className="my-3">
                                 <i className="far fa-check-circle mr-1"></i>
                                 <span>
                                 {props.data.detailsList[4]}
@@ -67,7 +66,7 @@ function PricingTableFeature(props) {
 
                         <Button variant="primary">Get Started</Button>{' '}
 
-                        <Card.Text className="ml-5 mr-5 mt-3" style={{ color: "#707070", fontSize: "13px" }}>
+                        <Card.Text className="mx-2 mt-3" style={{ color: "#707070", fontSize: "13px" }}>
                             {props.data.detailsText}
                         </Card.Text>
                     </Card.Body>
