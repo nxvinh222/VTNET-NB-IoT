@@ -3,7 +3,7 @@ import { Navbar, Nav, NavDropdown, Form, FormControl, Button } from 'react-boots
 
 function NavBar() {
     return(
-        <div>
+        <div className="navbar">
             <Navbar bg="light" expand="lg">
                 <Navbar.Brand href="/">
                     <img

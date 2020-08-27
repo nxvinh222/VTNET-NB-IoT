@@ -7,7 +7,7 @@ import { Row, Container } from "react-bootstrap"
 class TitleBanner extends Component {
   render() {
     return (
-      <div className="" style={{ color: 'black', position: "relative" }}>
+      <div className="title-banner" style={{ color: 'black', position: "relative" }}>
         <div className="p-5" style={{ backgroundColor: "#930800", color: "white" }}>
           <p className="display-4 text-center" >Did you know?</p>
           <Container>

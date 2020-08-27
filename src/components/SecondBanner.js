@@ -10,7 +10,7 @@ import { Breadcrumb, Container } from "react-bootstrap"
 class SecondBanner extends Component {
   render() {
     return (
-      <div>
+      <div className="second-banner">
 
           <Breadcrumb className="">
             <Container>

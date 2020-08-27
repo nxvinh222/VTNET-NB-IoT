@@ -60,12 +60,15 @@ function ControlledCarousel() {
 
     // Return all Carousel's items
     return (
-        <Container className="hero-text-carousel col-sm-11 col-md-9 col-lg-7">
-            <Carousel activeIndex={index} onSelect={handleSelect}>
-                {allItem}
+        <div className="intro-carousel">
+            <Container className="hero-text-carousel col-sm-11 col-md-9 col-lg-7">
+                <Carousel activeIndex={index} onSelect={handleSelect}>
+                    {allItem}
 
-            </Carousel>
-        </Container>
+                </Carousel>
+            </Container>
+        </div>
+
     );
 }
 

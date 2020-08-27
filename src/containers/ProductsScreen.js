@@ -15,7 +15,7 @@ import PricingTable from "../components/PricingTable"
 function HomeScreen() {
 
     return(
-        <div>
+        <div className="product-screen">
             <TopNav />
             <NavBar />
             <Banner bannerText="Take the development in-house"/>

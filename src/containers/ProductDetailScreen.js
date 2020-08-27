@@ -10,7 +10,7 @@ import Footer  from "../components/Footer"
 function HomeScreen() {
 
     return(
-        <div>
+        <div className="product-detail-screen">
             <TopNav />
             <NavBar />
             <ProductDetail />

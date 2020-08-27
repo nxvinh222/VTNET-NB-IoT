@@ -12,7 +12,7 @@ class ContactBanner extends Component {
   render() {
     return (
 
-      <div className="" style={{ color: 'black', position: "relative" }}>
+      <div className="contact-banner" style={{ color: 'black', position: "relative" }}>
         <div className="p-5" style={{ backgroundColor: "#00697d", color: "white" }}>
           <Container>
             <p className="display-4" >Interested in our IoT solutions?</p>

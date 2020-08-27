@@ -18,7 +18,7 @@ import Footer  from "../components/Footer"
 function HomeScreen() {
 
     return(
-        <div>
+        <div className="home-screen">
             <TopNav />
             <NavBar />
             <Banner bannerText="IoT | Internet of Things"/>
