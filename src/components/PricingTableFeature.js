@@ -64,7 +64,7 @@ function PricingTableFeature(props) {
                             </li>
                         </ul>
 
-                        <Button variant="primary">Get Started</Button>{' '}
+                        <Button className="my-3" variant="danger">Get Started</Button>{' '}
 
                         <Card.Text className="mx-2 mt-3" style={{ color: "#707070", fontSize: "13px" }}>
                             {props.data.detailsText}
