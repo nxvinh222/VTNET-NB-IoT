@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Carousel, Container, Button } from "react-bootstrap"
+import 'styles/Carousel.css'
 
 // const carouselPicture =
 //     "https://upload.wikimedia.org/wikipedia/commons/5/52/Golden_sky_%284080648531%29.jpg"

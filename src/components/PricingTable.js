@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Container, Row, CardDeck } from "react-bootstrap"
 import PricingTableFeature from "./PricingTableFeature"
+import 'styles/PricingTable.css'
 
 function PricingTable() {
 

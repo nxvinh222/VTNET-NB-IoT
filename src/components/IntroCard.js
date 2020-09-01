@@ -1,5 +1,6 @@
 import React, { } from "react";
 import { Card, Col } from "react-bootstrap"
+import 'styles/introCard.css'
 
 function IntroCard(props) {
     return (

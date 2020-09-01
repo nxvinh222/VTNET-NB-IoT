@@ -1,80 +1,10 @@
 .price-font {
   font-family: Roboto, Helvetica, Arial, sans-serif;
-  /* font-family: "Poppins", Helvetica, sans-serif; */
-}
-
-
-/* TopNav design */
-
-.top-nav-item {
-  border: none !important;
-  border-radius: 0 !important;
-  color: white;
-  font-size: 12px;
-}
-
-.top-nav-item:hover {
-  background-color: white;
-}
-
-
-/* Banner design */
-.hero-text {
-  position: relative;
-  color: white
-}
-
-.hero-text-top {
-  position: absolute;
-  text-align: center;
-  white-space: nowrap;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* ContactBanner design */
-.hero-text-contact {
-  position: absolute;
-  text-align: left;
-}
-
-/* IntroCard same size image design */
-#card-img-top {
-  height: 15vw;
-  object-fit: cover;
-}
-
-/* Carousel design */
-.carousel-top {
-  height: 250px
-}
-
-.hero-text-carousel {
-  position: relative;
-  margin-top: -2vh;
-}
-
-#carousel-top-button{
-  background-color: white;
-  border: none;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
 }
 
 /* Button  */
 .btn {
   border-radius: 0 !important;
-}
-
-/* PricingTable details */
-.price-detail-top-border {
-  border-top-color: #ddd;
-  border-top-width: 2px;
-  border-top-style: solid;
 }
 
 /* check circle icon */

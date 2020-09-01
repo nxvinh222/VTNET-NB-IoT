@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Button, Container } from "react-bootstrap"
+import 'styles/ContactBanner.css'
 
 // const logoUri =
 //   "https://www.hlbank.com.vn/content/dam/vn-global/images/official_image/help-and-support/contact-us/contact%20_us_banner.jpg";
