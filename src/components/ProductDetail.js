@@ -1,9 +1,15 @@
 import React, { useState } from "react"
 import { Container, Row, Button } from "react-bootstrap"
 
+// Owl Carousel
+import OwlCarousel from 'react-owl-carousel';  
+import 'owl.carousel/dist/assets/owl.carousel.css';  
+import 'owl.carousel/dist/assets/owl.theme.default.css'; 
+
 function InsideProduct (props) {
     // State
     const [quantity, setQuantity] = useState(1)
+    const [picture, setPicture] = useState("https://sodaq.com/wp-content/uploads/2019/11/SODAQ_WEBSHOP-min.jpg")
 
 
     const handleTextChange = (event) => {
@@ -11,14 +17,34 @@ function InsideProduct (props) {
         console.log(quantity);
     }
 
+    const handleClickPicture = (event) => {
+        setPicture(event.target.src)
+        console.log(picture);
+    }
+
+
+
 
     return (
         <div className="product-detail">
             <Container>
                 <Row>
                     <div className="image-wrap col-5">
-                        <a data-fancybox="gallery" href="https://sodaq.com/wp-content/uploads/2019/11/SODAQ_WEBSHOP-min.jpg">
-                            <img className="border p-3 col-12" src="https://sodaq.com/wp-content/uploads/2019/11/SODAQ_WEBSHOP-min.jpg" />
+                        <a data-fancybox="gallery" href={picture}>
+                            {/* <img className="border p-3 col-12" src={picture} alt="product_picture"/> */}
+                            <OwlCarousel 
+                                items={1}        
+                                className="owl-theme border-none p-3 col-12"  
+                                data-slider-id="1"      
+                                loop      
+                                nav     
+                                margin={8}
+                            >    
+                                <div><img onClick={handleClickPicture} className="img" src= {'https://sodaq.com/wp-content/uploads/2019/11/SODAQ_WEBSHOP-min.jpg'}/></div>          
+                                <div><img onClick={handleClickPicture}  className="img" src= {'https://cdn.webshopapp.com/shops/104792/files/298764174/500x500x2/image.jpg'}/></div>            
+                                <div><img onClick={handleClickPicture}  className="img" src= {'https://sodaq.com/wp-content/uploads/2019/11/SODAQ_WEBSHOP-min.jpg'}/></div>         
+                                <div><img onClick={handleClickPicture}  className="img" src= {'https://cdn.webshopapp.com/shops/104792/files/298764174/500x500x2/image.jpg'}/></div>                            
+                            </OwlCarousel>
                         </a>
                     </div>
                     
@@ -80,43 +106,7 @@ function InsideProduct (props) {
                         </div>
                     </div>
                 </Row>
-                <Row>
-                    <div className="owl-carousel">
-                        <div className="item">
-                        <h2>Swipe</h2>
-                        </div>
-                        <div className="item">
-                        <h2>Drag</h2>
-                        </div>
-                        <div className="item">
-                        <h2>Responsive</h2>
-                        </div>
-                        <div className="item">
-                        <h2>CSS3</h2>
-                        </div>
-                        <div className="item">
-                        <h2>Fast</h2>
-                        </div>
-                        <div className="item">
-                        <h2>Easy</h2>
-                        </div>
-                        <div className="item">
-                        <h2>Free</h2>
-                        </div>
-                        <div className="item">
-                        <h2>Upgradable</h2>
-                        </div>
-                        <div className="item">
-                        <h2>Tons of options</h2>
-                        </div>
-                        <div className="item">
-                        <h2>Infinity</h2>
-                        </div>
-                        <div className="item">
-                        <h2>Auto Width</h2>
-                        </div>
-                    </div>
-                </Row>
+                
             </Container>
         </div>
         
