@@ -2,9 +2,12 @@ import React, { useState } from "react"
 import { Container, Row, Button } from "react-bootstrap"
 
 // Owl Carousel
-import OwlCarousel from 'react-owl-carousel';  
-import 'owl.carousel/dist/assets/owl.carousel.css';  
-import 'owl.carousel/dist/assets/owl.theme.default.css'; 
+// import OwlCarousel from 'react-owl-carousel';  
+// import 'owl.carousel/dist/assets/owl.carousel.css';  
+// import 'owl.carousel/dist/assets/owl.theme.default.css'; 
+
+import "react-responsive-carousel/lib/styles/carousel.min.css"
+import { Carousel } from 'react-responsive-carousel'
 
 function InsideProduct (props) {
     // State
@@ -29,26 +32,19 @@ function InsideProduct (props) {
         <div className="product-detail">
             <Container>
                 <Row>
-                    <div className="image-wrap col-5">
-                        <a data-fancybox="gallery" href={picture}>
-                            {/* <img className="border p-3 col-12" src={picture} alt="product_picture"/> */}
-                            <OwlCarousel 
-                                items={1}        
-                                className="owl-theme border-none p-3 col-12"  
-                                data-slider-id="1"      
-                                loop      
-                                nav     
-                                margin={8}
-                            >    
-                                <div><img onClick={handleClickPicture} className="img" src= {'https://sodaq.com/wp-content/uploads/2019/11/SODAQ_WEBSHOP-min.jpg'}/></div>          
-                                <div><img onClick={handleClickPicture}  className="img" src= {'https://cdn.webshopapp.com/shops/104792/files/298764174/500x500x2/image.jpg'}/></div>            
-                                <div><img onClick={handleClickPicture}  className="img" src= {'https://sodaq.com/wp-content/uploads/2019/11/SODAQ_WEBSHOP-min.jpg'}/></div>         
-                                <div><img onClick={handleClickPicture}  className="img" src= {'https://cdn.webshopapp.com/shops/104792/files/298764174/500x500x2/image.jpg'}/></div>                            
-                            </OwlCarousel>
-                        </a>
+                    <div className="image-wrap col-md-5 col-sm-12">
+                        {/* <a data-fancybox="gallery" href={picture}> */}
+
+                            <Carousel className="border-none col-12" autoPlay interval="5000">
+                                <img src="https://cdn.webshopapp.com/shops/104792/files/298764174/500x500x2/image.jpg" />
+                                <img src="https://cdn.webshopapp.com/shops/104792/files/298764174/500x500x2/image.jpg" />
+                                <img src="https://cdn.webshopapp.com/shops/104792/files/298764207/500x500x2/image.jpg" />
+                            </Carousel>
+                            
+                        {/* </a> */}
                     </div>
                     
-                    <div className="info col-7">
+                    <div className="info col-md-7 col-sm-12">
 
                         <div className="top-info">
                             <div className="info-brand">
@@ -78,35 +74,37 @@ function InsideProduct (props) {
                         </p>
 
                         <div className="add-to-card">
+                            <div className="quantity-input">
+                                <i 
+                                    className="fas fa-minus text-danger"
+                                    onClick={() => setQuantity(prevQuantity => prevQuantity>1 ? prevQuantity-1 : 1)}
+                                ></i>
+                                <input 
+                                    className="text-center"
+                                    type="text"
+                                    name="quantity"
+                                    value={quantity}
+                                    onChange={handleTextChange}
+                                    style={{
+                                        outline: "none",
+                                        border: "none",
+                                        width: "100px"
+                                    }}
+                                />
+                                <i 
+                                    className="fas fa-plus text-danger"
+                                    onClick={() => setQuantity(prevQuantity => prevQuantity+1)}
+                                ></i>
+                            </div>
+                            <div className="add-button my-2">
+                                    <Button href="#" style={{width: "129px"}} variant="danger">Add to Card</Button>{' '}
+                            </div>
                             
-                                <div className="quantity-input col-12">
-                                    <i 
-                                        className="fas fa-minus text-danger"
-                                        onClick={() => setQuantity(prevQuantity => prevQuantity>1 ? prevQuantity-1 : 1)}
-                                    ></i>
-                                    <input 
-                                        className="col-2 mx-3 text-center"
-                                        type="text"
-                                        name="quantity"
-                                        value={quantity}
-                                        onChange={handleTextChange}
-                                        style={{
-                                            outline: "none",
-                                            border: "none"
-                                        }}
-                                    />
-                                    <i 
-                                        className="fas fa-plus text-danger"
-                                        onClick={() => setQuantity(prevQuantity => prevQuantity+1)}
-                                    ></i>
-                                    
-                                </div>
-                                <Button className="col-3 m-4" href="#" variant="danger">Add to Card</Button>{' '}
-                          
+       
                         </div>
                     </div>
                 </Row>
-                
+
             </Container>
         </div>
         
