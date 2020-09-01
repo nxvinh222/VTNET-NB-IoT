@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Carousel, Container, Button } from "react-bootstrap"
 import 'styles/Carousel.css'
 
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
 // const carouselPicture =
 //     "https://upload.wikimedia.org/wikipedia/commons/5/52/Golden_sky_%284080648531%29.jpg"
 
@@ -51,8 +55,7 @@ function ControlledCarousel() {
                         </Button>{' '}
             </Carousel.Caption>
         </Carousel.Item>
-    )
-    )
+    ))
 
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
@@ -63,10 +66,44 @@ function ControlledCarousel() {
     return (
         <div className="intro-carousel">
             <Container className="hero-text-carousel col-sm-11 col-md-9 col-lg-7">
-                <Carousel activeIndex={index} onSelect={handleSelect}>
+                {/* <Carousel activeIndex={index} onSelect={handleSelect}>
                     {allItem}
+                </Carousel> */}
+                <OwlCarousel
+                    className="owl-theme"
+                    items={1}
+                    loop
+                    margin={10}
+                    nav
+                >
+                    {/* item 1 */}
+                    <div
+                        className="item"
+                        style={{ height: "226px", backgroundColor: "#5e2750" }}
+                    >
+                        <Carousel.Caption>
+                            <h3 className="pt-3" style={{ fontFamily: "arial" }}>test1</h3>
+                            <p className="lead" >content1</p>
+                            <Button className="col-5 btn-block" size="lg" href="/" id="carousel-top-button" active>
+                                Enter
+                            </Button>{' '}
+                        </Carousel.Caption>
+                    </div>
 
-                </Carousel>
+                    {/* item 2 */}
+                    <div
+                        className="item"
+                        style={{ height: "226px", backgroundColor: "#5e2750" }}
+                    >
+                        <Carousel.Caption>
+                            <h3 className="pt-3" style={{ fontFamily: "arial" }}>test2</h3>
+                            <p className="lead" >content2</p>
+                            <Button className="col-5 btn-block" size="lg" href="/" id="carousel-top-button" active>
+                                Enter
+                            </Button>{' '}
+                        </Carousel.Caption>
+                    </div>
+                </OwlCarousel>
             </Container>
         </div>
 
