@@ -7,10 +7,10 @@ import SecondBanner from "../components/SecondBanner"
 import IntroVideo from "../components/IntroVideo"
 import Navigation from "../components/Navigation"
 import IntroCards from "../components/IntroCards"
-import ContactBanner from "../components/ContactBanner"
-import TitleBanner from "../components/TitleBanner"
-import Footer  from "../components/Footer"
-import PricingTable from "../components/PricingTable"
+import ContactBanner from "components/ContactBanner"
+import TitleBanner from "components/TitleBanner"
+import Footer  from "components/Footer"
+import PricingTable from "components/PricingTable"
 
 function HomeScreen() {
 
