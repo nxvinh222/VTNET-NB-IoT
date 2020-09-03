@@ -1,0 +1,25 @@
+.vignette-container {
+   min-height: 200px;
+   background-size: cover;
+   border-radius: 10px;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+   margin-bottom: 100px;
+   cursor: pointer;
+}
+
+.vignette-content {
+   padding: 5px;
+   background-color: white;
+   position: absolute;
+   word-wrap:break-word;
+   font-size: 12px;
+   border-radius: 10px;
+   top: 85%;
+   box-shadow: 0px 0px 15px 15px rgba(0,0,0,0.2);
+   width: 85%;
+   height: 60%;
+}

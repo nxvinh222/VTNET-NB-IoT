@@ -1,23 +1,26 @@
 import React from "react"
-import { Container } from "react-bootstrap"
+import { Col } from "react-bootstrap"
+import 'styles/ProductVignette.css'
 
 function ProductVignette(props) {
    return (
       <div className="vignette">
-         <Container>
-            <div className="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-               <div className="vignette-content"
-                  style={{
-                     backgroundImage: "url(https://testwebsite.sodaq.com/wp-content/uploads/2016/12/3-scaled.jpg)",
-                     minHeight: "200px",
-                     backgroundSize: "cover"
-                  }}>
-
-               </div>
-
-            </div>
-         </Container>
+         <Col>
+            <div className="vignette-container"
+               style={{
+                  backgroundImage: "url(https://testwebsite.sodaq.com/wp-content/uploads/2016/12/3-scaled.jpg)"
+               }}>
+                  <div className="vignette-content">
+                     <h5>Lorem Ipsum</h5>
+                     <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sollicitudin eros.
+                     </p>
+                  </div>
+            </div>  
+         </Col>
       </div>
+      
+   
    )
 }
 
