@@ -3,7 +3,7 @@ import TopNav from "components/TopNav"
 import NavBar from "components/NavBar"
 import Banner from "components/Banner"
 import PricingTable from "components/PricingTable"
-import ProductVignettes from "components/ProductVignettes"
+import ProductSolutions from "components/ProductSolutions"
 import IntroCards from "components/IntroCards"
 import ContactBanner from "components/ContactBanner"
 import TitleBanner from "components/TitleBanner"
@@ -18,7 +18,7 @@ function HomeScreen() {
             <NavBar />
             <Banner bannerText="Take the development in-house"/>
             <PricingTable />
-            <ProductVignettes />
+            <ProductSolutions />
             <IntroCards />
             <ContactBanner />
             <TitleBanner />

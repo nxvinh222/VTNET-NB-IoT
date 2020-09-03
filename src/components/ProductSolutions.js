@@ -1,9 +1,11 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Container, Row } from "react-bootstrap"
 
 import ProductVignette from 'components/ProductVignette'
 
-function ProductVignettes(props) {
+function ProductVignettes() {
+
+
    return (
       <div className="product-vignettes">
          <Container>
