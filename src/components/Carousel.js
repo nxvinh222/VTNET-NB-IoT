@@ -8,8 +8,10 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-// const carouselPicture =
-//     "https://upload.wikimedia.org/wikipedia/commons/5/52/Golden_sky_%284080648531%29.jpg"
+
+// Pseudo Data Import 
+import CarouselData from 'PseudoData/CarouselData'
+
 
 function ControlledCarousel() {
     //Init State
@@ -19,24 +21,9 @@ function ControlledCarousel() {
     // ComponentDidMount
     // Call API
     useEffect(() => {
-        setData([
-            {
-                title: "Lorem Ipsum",
-                text: "Lorem ipsum dolor sit amet.",
-                picture: "",
-                href: "http://google.com"
-            },
-            {
-                title: "Lorem Ipsum Extra",
-                text: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
-                picture: "https://www.cdacollaborative.org/wp-content/uploads/2017/07/Biz-and-Peace-Carousel-Background-01.png",
-                href: "http://google.com"
-            }
-        ])
+        setData(CarouselData)
     }, []);
 
-    console.log(data)
-    console.log(data.length)
 
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
