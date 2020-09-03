@@ -7,6 +7,6 @@
 
 .solution-card-cnt:hover {
  /*  Making button bigger on hover  */
-   box-shadow: 0px 15px 15px 5px rgba(0,0,0,0.4);
+   box-shadow: 0px 15px 15px 5px rgba(0,0,0,0.4) !important;
    transform: scale(1.2) perspective(1px)
  }
