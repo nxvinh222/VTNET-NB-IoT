@@ -1,0 +1,12 @@
+.solution-card-cnt {
+   background-color: chocolate;
+   border-radius: 5px;
+   height: 100px;
+   text-align: center;
+}
+
+.solution-card-cnt:hover {
+ /*  Making button bigger on hover  */
+   box-shadow: 0px 15px 15px 5px rgba(0,0,0,0.4);
+   transform: scale(1.2) perspective(1px)
+ }
