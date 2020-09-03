@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Container, CardDeck, Row } from "react-bootstrap"
-import IntroCard from "./IntroCard"
+import IntroCard from "components/IntroCard"
 
 
 
