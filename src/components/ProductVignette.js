@@ -1,6 +1,5 @@
 import React from "react"
 import { Col } from "react-bootstrap"
-import { Link } from 'react-router-dom'
 import 'styles/ProductVignette.css'
 
 function ProductVignette(props) {
@@ -8,7 +7,7 @@ function ProductVignette(props) {
    return (
       <div className="vignette">
          <Col>
-            <Link to={'products' + '/1'}>
+            <a href={window.location.href + '/1'}>
                <div className="vignette-container"
                   onClick={"window.location.href = 'http://example.com';"}
                   style={{
@@ -26,7 +25,7 @@ function ProductVignette(props) {
                         </div>
                      </div>
                </div>  
-            </Link>
+            </a>
          </Col>
       </div>
       
