@@ -16,7 +16,9 @@ function ProductVignette(props) {
                   
                >
                      <div className="vignette-content">
-                        <h5>Lorem Ipsum</h5>
+                        <h5 className='vignette-title text-center'>
+                           Lorem Ipsum <i className="fas fa-toolbox"></i> 
+                        </h5>
                         <p>
                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sollicitudin eros.
                         </p>
