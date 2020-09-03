@@ -23,7 +23,7 @@ function ControlledCarousel() {
             {
                 title: "Lorem Ipsum",
                 text: "Lorem ipsum dolor sit amet.",
-                picture: "https://www.cdacollaborative.org/wp-content/uploads/2017/07/Biz-and-Peace-Carousel-Background-01.png",
+                picture: "",
                 href: "http://google.com"
             },
             {
@@ -57,18 +57,6 @@ function ControlledCarousel() {
                 >
                     {/* Map data with item */}
                     {data.map((itemInfo, i) => 
-                                // <div
-                                //     className="item"
-                                //     style={{ height: "226px", backgroundColor: "#5e2750" }}
-                                // >
-                                //     <Carousel.Caption>
-                                //         <h3 className="pt-3" style={{ fontFamily: "arial" }}>{itemInfo.title}</h3>
-                                //         <p className="lead" >content1</p>
-                                //         <Button className="col-5 btn-block" size="lg" href="/" id="carousel-top-button" active>
-                                //             Enter
-                                //         </Button>{' '}
-                                //     </Carousel.Caption>
-                                // </div>
                                 <CarouselItem data={itemInfo} key={i}/>
                             )
                     }

@@ -18,6 +18,10 @@ function CarouselItem(props) {
             className="item"
             style={{ height: "226px", backgroundColor: "#5e2750" }}
         >
+            <img
+                className="d-block w-100"
+                 src={props.data.picture}
+            />
             <Carousel.Caption>                
                 <h3 className="pt-3" style={{ fontFamily: "arial" }}>{props.data.title}</h3>
                 <p className="lead" >{props.data.text}</p>
