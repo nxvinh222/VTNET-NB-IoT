@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Carousel, Container, Button } from "react-bootstrap"
 import 'styles/Carousel.css'
 
+import CarouselItem from 'components/CarouselItem'
+
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -19,43 +21,22 @@ function ControlledCarousel() {
     useEffect(() => {
         setData([
             {
-                title: "Arjuna",
-                text: "Expanding sacred domain. Domain secured.",
+                title: "Lorem Ipsum",
+                text: "Lorem ipsum dolor sit amet.",
                 picture: "https://www.cdacollaborative.org/wp-content/uploads/2017/07/Biz-and-Peace-Carousel-Background-01.png",
                 href: "http://google.com"
             },
             {
-                title: "Altria",
-                text: "Light, may you be released from the ends of the world. ",
+                title: "Lorem Ipsum Extra",
+                text: "Lorem ipsum dolor sit amet, consectetur adipiscing.",
                 picture: "https://www.cdacollaborative.org/wp-content/uploads/2017/07/Biz-and-Peace-Carousel-Background-01.png",
                 href: "http://google.com"
             }
         ])
     }, []);
 
-
-    // Map Carousel's data
-    const allItem = data.map((itemInfo, i) => (
-        <Carousel.Item className="" key={i}>
-            {/* <img
-                    className="d-block w-100"
-                    src={itemInfo.picture}
-                    alt="Slide"
-                    style={{height: "226px"}}
-                    /> */}
-            <div
-                className=""
-                style={{ height: "226px", backgroundColor: "#5e2750" }}
-            />
-            <Carousel.Caption className="" style={{ height: "100%" }}>
-                <h3 className="pt-3" style={{ fontFamily: "arial" }}>{itemInfo.title}</h3>
-                <p className="lead" >{itemInfo.text}</p>
-                <Button className="col-5 btn-block" size="lg" href={itemInfo.href} id="carousel-top-button" active>
-                    Enter
-                        </Button>{' '}
-            </Carousel.Caption>
-        </Carousel.Item>
-    ))
+    console.log(data)
+    console.log(data.length)
 
     const handleSelect = (selectedIndex, e) => {
         setIndex(selectedIndex);
@@ -63,51 +44,40 @@ function ControlledCarousel() {
 
 
     // Return all Carousel's items
-    return (
+    // Khong hieu tai sao phai kiem tra data khi doi sang OwlCarousel trong khi luc truoc khong can??? 
+    return data.length > 0 ? (
         <div className="intro-carousel">
             <Container className="hero-text-carousel col-sm-11 col-md-9 col-lg-7">
-                {/* <Carousel activeIndex={index} onSelect={handleSelect}>
-                    {allItem}
-                </Carousel> */}
                 <OwlCarousel
                     className="owl-theme"
+                    activeIndex={index}
+                    onSelect={handleSelect}
                     items={1}
-                    loop
                     margin={10}
-                    nav
                 >
-                    {/* item 1 */}
-                    <div
-                        className="item"
-                        style={{ height: "226px", backgroundColor: "#5e2750" }}
-                    >
-                        <Carousel.Caption>
-                            <h3 className="pt-3" style={{ fontFamily: "arial" }}>test1</h3>
-                            <p className="lead" >content1</p>
-                            <Button className="col-5 btn-block" size="lg" href="/" id="carousel-top-button" active>
-                                Enter
-                            </Button>{' '}
-                        </Carousel.Caption>
-                    </div>
-
-                    {/* item 2 */}
-                    <div
-                        className="item"
-                        style={{ height: "226px", backgroundColor: "#5e2750" }}
-                    >
-                        <Carousel.Caption>
-                            <h3 className="pt-3" style={{ fontFamily: "arial" }}>test2</h3>
-                            <p className="lead" >content2</p>
-                            <Button className="col-5 btn-block" size="lg" href="/" id="carousel-top-button" active>
-                                Enter
-                            </Button>{' '}
-                        </Carousel.Caption>
-                    </div>
+                    {/* Map data with item */}
+                    {data.map((itemInfo, i) => 
+                                // <div
+                                //     className="item"
+                                //     style={{ height: "226px", backgroundColor: "#5e2750" }}
+                                // >
+                                //     <Carousel.Caption>
+                                //         <h3 className="pt-3" style={{ fontFamily: "arial" }}>{itemInfo.title}</h3>
+                                //         <p className="lead" >content1</p>
+                                //         <Button className="col-5 btn-block" size="lg" href="/" id="carousel-top-button" active>
+                                //             Enter
+                                //         </Button>{' '}
+                                //     </Carousel.Caption>
+                                // </div>
+                                <CarouselItem data={itemInfo} key={i}/>
+                            )
+                    }
+                    {/* // */}
                 </OwlCarousel>
             </Container>
         </div>
 
-    );
+    ) : null;
 }
 
 export default ControlledCarousel;
