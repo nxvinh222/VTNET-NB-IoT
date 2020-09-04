@@ -7,6 +7,7 @@ import { Container, Row, Button } from "react-bootstrap"
 // import 'owl.carousel/dist/assets/owl.theme.default.css'; 
 
 import AddToCart from 'components/AddToCart'
+import DiscountList from 'components/DiscountList'
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
@@ -21,9 +22,6 @@ function ProductDetail (props) {
         setQuantity(event.target.value)
         console.log(quantity);
     }
-
-
-
 
     return (
         <div className="product-detail">
@@ -75,9 +73,10 @@ function ProductDetail (props) {
                             setQuantity={setQuantity} 
                             handleTextChange={handleTextChange} 
                         />
+                        <DiscountList />
                     </div>
-                </Row>
 
+                </Row>
             </Container>
         </div>
         

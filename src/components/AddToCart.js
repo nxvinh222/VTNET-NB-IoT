@@ -1,6 +1,7 @@
-import React, { useState } from "react"
-import { Container, Row, Button } from "react-bootstrap"
+import React from "react"
+import { Button } from "react-bootstrap"
 
+import 'styles/AddToCart.css'
 
 function AddToCart (props) {
 
