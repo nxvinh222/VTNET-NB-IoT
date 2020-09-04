@@ -60,7 +60,7 @@ function ProductDetail (props) {
                         </div>
 
                         <div className="price price-font">
-                                <h3 className="" style={{color: "rgb(0, 105, 125)"}}>{(1000000).toLocaleString()}₫</h3>
+                                <h3 className="text-secondary">{(1000000).toLocaleString()}₫</h3>
                         </div>
 
                         <p className="description"
