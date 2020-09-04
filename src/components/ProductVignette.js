@@ -11,7 +11,7 @@ function ProductVignette(props) {
                <div className="vignette-container"
                   onClick={"window.location.href = 'http://example.com';"}
                   style={{
-                     backgroundImage: "url(https://testwebsite.sodaq.com/wp-content/uploads/2016/12/3-scaled.jpg)"
+                     backgroundImage: "url(" + "https://testwebsite.sodaq.com/wp-content/uploads/2016/12/3-scaled.jpg" + ")"
                   }}
                   
                >
