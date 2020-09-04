@@ -11,7 +11,7 @@ import AddToCart from 'components/AddToCart'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
 
-function InsideProduct (props) {
+function ProductDetail (props) {
     // State
     const [quantity, setQuantity] = useState(1)
     const [picture, setPicture] = useState("https://sodaq.com/wp-content/uploads/2019/11/SODAQ_WEBSHOP-min.jpg")
@@ -20,11 +20,6 @@ function InsideProduct (props) {
     const handleTextChange = (event) => {
         setQuantity(event.target.value)
         console.log(quantity);
-    }
-
-    const handleClickPicture = (event) => {
-        setPicture(event.target.src)
-        console.log(picture);
     }
 
 
@@ -89,4 +84,4 @@ function InsideProduct (props) {
     )
 }
 
-export default InsideProduct
+export default ProductDetail
