@@ -6,6 +6,7 @@ import SolutionCard from 'components/SolutionCard'
 import ProductVignette from 'components/ProductVignette'
 
 import solutionCardData from 'PseudoData/SolutionCard'
+import ProductVignetteData from 'PseudoData/ProductVignette'
 
 function ProductVignettes() {
 
@@ -68,9 +69,10 @@ function ProductVignettes() {
                </div>
                <div className="product-vignettes">
                   <Row xs={1} sm={1} md={1} lg={3}>
-                     <ProductVignette />
-                     <ProductVignette />
-                     <ProductVignette />
+                     {
+                        ProductVignetteData.featuredProduct[activeId].map((item) => 
+                           <ProductVignette data={item} />)
+                     }
                   </Row>
                </div>
 

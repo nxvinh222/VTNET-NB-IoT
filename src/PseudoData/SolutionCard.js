@@ -5,15 +5,6 @@ const data = {
       "PCB development boards designed by SODAQ enable IoT engineers in proving concepts, building prototypes and low production runs. Our boards are the foundational technology behind SODAQ products.",
       "Industrial sensors are applied to ensure industrial or mechanical operations run smoothly in real-time. SODAQ supports in creating these systems together with customer business and development teams."
    ],
-
-   featuredProduct: [
-      {
-         title: "",
-         content: "",
-         picture: "",
-         productId: ""
-      }
-   ]
 }
 
 export default data

@@ -4,23 +4,21 @@ import 'styles/ProductVignette.css'
 
 function ProductVignette(props) {
 
-   return (
+   return props.data ? (
       <div className="vignette">
          <Col>
             <a href={window.location.href + '/1'}>
                <div className="vignette-container"
-                  onClick={"window.location.href = 'http://example.com';"}
                   style={{
-                     backgroundImage: "url(" + "https://testwebsite.sodaq.com/wp-content/uploads/2016/12/3-scaled.jpg" + ")"
-                  }}
-                  
+                     backgroundImage: "url(" + props.data.picture + ")"
+                  }}     
                >
                      <div className="vignette-content">
                         <h5 className='vignette-title text-center'>
-                           Lorem Ipsum <i className="fas fa-toolbox"></i> 
+                           {props.data.title} <i className="fas fa-toolbox"></i> 
                         </h5>
                         <p>
-                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget sollicitudin eros.
+                           {props.data.content}
                         </p>
                         <div className="continue-button">
                            <i className="fas fa-arrow-circle-right"></i>
@@ -30,9 +28,7 @@ function ProductVignette(props) {
             </a>
          </Col>
       </div>
-      
-   
-   )
+   ) : null
 }
 
 export default ProductVignette
