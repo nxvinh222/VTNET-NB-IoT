@@ -2,7 +2,6 @@ import React from "react"
 import { Button } from "react-bootstrap"
 
 import 'styles/AddToCart.css'
-import 'styles/AddToCart.scss'
 
 function AddToCart (props) {
 
