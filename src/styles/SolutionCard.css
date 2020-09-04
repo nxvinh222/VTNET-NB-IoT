@@ -1,5 +1,10 @@
-.solution-card {
-  padding: 0px;
+.solution-content {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.solution-cards{
+  padding-bottom: 25px;
 }
 
 .solution-card-cnt {

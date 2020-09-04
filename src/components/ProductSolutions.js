@@ -5,6 +5,8 @@ import 'styles/SolutionCard.css'
 import SolutionCard from 'components/SolutionCard'
 import ProductVignette from 'components/ProductVignette'
 
+import solutionCardData from 'PseudoData/SolutionCard'
+
 function ProductVignettes() {
 
    const data = useState([])
@@ -21,7 +23,8 @@ function ProductVignettes() {
          <Container>
 
                <div className="solution-content">
-                  <p>{content[activeId]}</p>
+                  <h1 className="display-4">Explore more!</h1>
+                  <p className="lead">{solutionCardData.solutionContent[activeId]}</p>
                </div>
 
                <div className="solution-cards">

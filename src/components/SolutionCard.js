@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import { Col, Button } from "react-bootstrap"
 import 'styles/SolutionCard.css'
 
+
 function ProductVignettes(props) {
 
 
@@ -16,10 +17,11 @@ function ProductVignettes(props) {
                         ? { backgroundColor: props.color, transform: "scale(1.2)" }
                         : { backgroundColor: props.color }}
                id={props.id}
-               onMouseOver={props.handleMouse}
-               // onMouseLeave={props.handleMouse}
+               onClick={props.handleMouse}
             >
-               <span                id={props.id}>
+               <span 
+                  id={props.id}
+               >
                   {props.title}
                </span>
             </div>
