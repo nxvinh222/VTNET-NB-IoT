@@ -6,6 +6,8 @@ import { Container, Row, Button } from "react-bootstrap"
 // import 'owl.carousel/dist/assets/owl.carousel.css';  
 // import 'owl.carousel/dist/assets/owl.theme.default.css'; 
 
+import AddToCart from 'components/AddToCart'
+
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
 
@@ -73,35 +75,11 @@ function InsideProduct (props) {
                             D'Éon was born at the Hôtel d'Uzès in Tonnerre, Burgundy, into a poor noble family. D'Éon's father, Louis d'Éon de Beaumont, was an attorney and director of the king's dominions, later mayor of Tonnerre and sub-delegate of the intendant of the généralité of Paris.
                         </p>
 
-                        <div className="add-to-card">
-                            <div className="quantity-input">
-                                <i 
-                                    className="fas fa-minus text-danger"
-                                    onClick={() => setQuantity(prevQuantity => prevQuantity>1 ? prevQuantity-1 : 1)}
-                                ></i>
-                                <input 
-                                    className="text-center"
-                                    type="text"
-                                    name="quantity"
-                                    value={quantity}
-                                    onChange={handleTextChange}
-                                    style={{
-                                        outline: "none",
-                                        border: "none",
-                                        width: "100px"
-                                    }}
-                                />
-                                <i 
-                                    className="fas fa-plus text-danger"
-                                    onClick={() => setQuantity(prevQuantity => prevQuantity+1)}
-                                ></i>
-                            </div>
-                            <div className="add-button my-2">
-                                    <Button href="#" style={{width: "129px"}} variant="danger">Add to Card</Button>{' '}
-                            </div>
-                            
-       
-                        </div>
+                        <AddToCart 
+                            quantity={quantity} 
+                            setQuantity={setQuantity} 
+                            handleTextChange={handleTextChange} 
+                        />
                     </div>
                 </Row>
 
