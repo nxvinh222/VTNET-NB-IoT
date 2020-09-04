@@ -1,12 +1,40 @@
-.solution-card-cnt {
-   background-color: chocolate;
-   border-radius: 5px;
-   height: 100px;
-   text-align: center;
+.solution-card {
+  padding: 0px;
 }
 
-.solution-card-cnt:hover {
- /*  Making button bigger on hover  */
-   box-shadow: 0px 15px 15px 5px rgba(0,0,0,0.4) !important;
-   transform: scale(1.2) perspective(1px)
- }
+.solution-card-cnt {
+  border-radius: 5px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.solution-card-cnt span{
+  position: relative;
+}
+
+/* .solution-card :hover{
+  transform: scale(1.1);
+} */
+
+.solution-card-cnt span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+
+.solution-card-cnt:hover span{
+  padding-right: 25px;
+}
+
+
+.solution-card-cnt:hover span:after {
+  opacity: 1;
+  right: 0;
+}
