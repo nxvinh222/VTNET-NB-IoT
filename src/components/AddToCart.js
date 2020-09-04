@@ -2,6 +2,7 @@ import React from "react"
 import { Button } from "react-bootstrap"
 
 import 'styles/AddToCart.css'
+import 'styles/AddToCart.scss'
 
 function AddToCart (props) {
 
@@ -10,7 +11,7 @@ function AddToCart (props) {
       <div className="add-to-cart">
             <div className="quantity-input">
                <i 
-                  className="fas fa-minus text-danger"
+                  className="fas fa-minus"
                   onClick={() => props.setQuantity(prevQuantity => prevQuantity>1 ? prevQuantity-1 : 1)}
                ></i>
                <input 
@@ -26,12 +27,12 @@ function AddToCart (props) {
                   }}
                />
                <i 
-                  className="fas fa-plus text-danger"
+                  className="fas fa-plus"
                   onClick={() => props.setQuantity(prevQuantity => prevQuantity+1)}
                ></i>
             </div>
             <div className="add-button my-2">
-                  <Button href="#" style={{width: "129px"}} variant="danger">Add to Card</Button>{' '}
+                  <Button href="#" style={{width: "129px"}} variant="secondary">Add to Card</Button>{' '}
             </div>
       </div>
         

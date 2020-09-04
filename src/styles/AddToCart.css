@@ -4,3 +4,7 @@
 .fa-minus{
    cursor: pointer;
 }
+
+.quantity-input i{
+   color: #E54B4B;
+}
