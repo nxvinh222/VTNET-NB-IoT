@@ -1,20 +1,29 @@
 import React from "react"; 
-import { Modal } from "react-bootstrap"
+import { Modal, Button } from "react-bootstrap"
 
 function IntroVideo(props) {
 
     return (
-       <div className="login-popup">
+      //  <div className="login-popup">
           <Modal show={props.show} onHide={props.handleClose} >
-            {/* <Modal.Header closeButton> */}
-            <div class="modal-dialog">
-               <div class="modal-content"> 
-                  <div class="modal-header text-center">
-                  <h3 class="modal-title w-100 dark-grey-text font-weight-bold">Sign In</h3>
-                  <button type="button" class="close" data-dismiss="modal" aria-lable="close">&times;</button>
-                  </div>
+                  <Modal.Header closeButton>
+                     <Modal.Title>Sign In</Modal.Title>
+                  </Modal.Header>
+                  <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+                  <Modal.Footer>
+                     <Button variant="secondary" onClick={props.handleClose}>
+                        Close
+                     </Button>
+                     <Button variant="primary" onClick={props.handleClose}>
+                        Save Changes
+                     </Button>
+                  </Modal.Footer>
+                  {/* <div class="modal-header text-center">
+                     <h3 class="modal-title w-100 dark-grey-text font-weight-bold">Sign In</h3>
+                     <button type="button" class="close" data-dismiss="modal" aria-lable="close">&times;</button>
+                  </div> */}
 
-                  <div class="modal-body mx-4">
+                  {/* <div class="modal-body mx-4">
                   <div class="md-form">
                         <input type="email" class="form-control validate" />
                         <label data-error="wrong" data-success="right">Your Email</label>
@@ -36,11 +45,10 @@ function IntroVideo(props) {
                         <button type="button" class="btn btn-purple z-depth-1a"><i class="fab fa-twitter text-center"></i></button>
                         <button type="button" class="btn btn-red z-depth-1a"><i class="fab fa-google-plus-g text-center"></i></button>
                   </div>
-                  </div>
-               </div>
-            </div> 
+                  </div> */}
+
          </Modal>
-       </div>
+      //  </div>
       
 
    )
