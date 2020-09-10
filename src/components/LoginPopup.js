@@ -1,6 +1,8 @@
 import React from "react"; 
 import { Modal, Button, Form } from "react-bootstrap"
 
+import 'styles/LoginPopup.css'
+
 function IntroVideo(props) {
 
     return (
