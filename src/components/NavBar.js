@@ -26,11 +26,11 @@ function NavBar() {
                             <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                         </NavDropdown>
                     </Nav>
-                    {/* <Form inline>
-                        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                        <Button variant="primary">Search</Button>
-                    </Form> */}
+                    <div className="login-button md-text-right">
+                        <a href="" className="btn btn-info" data-toggle="modal" data-target="#signupPage">Login<i class="fas fa-user-plus ml-3"></i></a>
+                    </div>
                 </Navbar.Collapse>
+
             </Navbar>              
         </div>
     )
