@@ -6,7 +6,7 @@ import 'styles/LoginPopup.css'
 function IntroVideo(props) {
 
     return (
-      //  <div className="login-popup">
+       <div className="login-popup">
           <Modal show={props.show} onHide={props.handleClose} >
                   <Modal.Header closeButton>
                      <Modal.Title>Sign In</Modal.Title>
@@ -69,7 +69,7 @@ function IntroVideo(props) {
                   </div> */}
 
          </Modal>
-      //  </div>
+      </div>
       
 
    )
