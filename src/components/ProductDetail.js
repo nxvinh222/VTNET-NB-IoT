@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Container, Row, Button } from "react-bootstrap"
+import { Container, Row } from "react-bootstrap"
 
 // Owl Carousel
 // import OwlCarousel from 'react-owl-carousel';  
@@ -15,7 +15,7 @@ import { Carousel } from 'react-responsive-carousel'
 function ProductDetail (props) {
     // State
     const [quantity, setQuantity] = useState(1)
-    const [picture, setPicture] = useState("https://sodaq.com/wp-content/uploads/2019/11/SODAQ_WEBSHOP-min.jpg")
+    // const [picture, setPicture] = useState("https://sodaq.com/wp-content/uploads/2019/11/SODAQ_WEBSHOP-min.jpg")
 
 
     const handleTextChange = (event) => {
@@ -31,9 +31,9 @@ function ProductDetail (props) {
                         {/* <a data-fancybox="gallery" href={picture}> */}
 
                             <Carousel className="border-none col-12" autoPlay interval="5000">
-                                <img src="https://cdn.webshopapp.com/shops/104792/files/298764174/500x500x2/image.jpg" />
-                                <img src="https://cdn.webshopapp.com/shops/104792/files/298764174/500x500x2/image.jpg" />
-                                <img src="https://cdn.webshopapp.com/shops/104792/files/298764207/500x500x2/image.jpg" />
+                                <img src="https://cdn.webshopapp.com/shops/104792/files/298764174/500x500x2/image.jpg" alt="product-thumbnail-1" />
+                                <img src="https://cdn.webshopapp.com/shops/104792/files/298764174/500x500x2/image.jpg" alt="product-thumbnail-2" />
+                                <img src="https://cdn.webshopapp.com/shops/104792/files/298764207/500x500x2/image.jpg" alt="product-thumbnail-3" />
                             </Carousel>
                             
                         {/* </a> */}

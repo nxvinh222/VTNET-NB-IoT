@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react"
-import { Col, Button } from "react-bootstrap"
+import React from "react"
+import { Col } from "react-bootstrap"
 import 'styles/SolutionCard.css'
 
 
@@ -13,7 +13,7 @@ function ProductVignettes(props) {
          <Col className="p-1">
             <div 
                className="solution-card-cnt" 
-               style={props.activeId == props.id 
+               style={props.activeId === props.id 
                         ? { backgroundColor: props.color, transform: "scale(1.2)" }
                         : { backgroundColor: props.color }}
                id={props.id}

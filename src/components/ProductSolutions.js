@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react"
-import { Container, Row, Col } from "react-bootstrap"
+import React, { useState, useEffect } from "react"
+import { Container, Row } from "react-bootstrap"
 import 'styles/SolutionCard.css'
 
 import SolutionCard from 'components/SolutionCard'
@@ -10,14 +10,14 @@ import ProductVignetteData from 'PseudoData/ProductVignette'
 
 function ProductVignettes() {
 
-   const data = useState([])
-   const [ activeId, setActiveId ] = useState(0)
+   // const data = useState([])
+   const [ activeId, setActiveId ] = useState("0")
+
 
    const handleMouse = (event) => {
       setActiveId(event.target.id)
       console.log(activeId)
    }
-   const content = [1, 2, 3, 4, 5]
 
    return (
       <div className="product-content">
