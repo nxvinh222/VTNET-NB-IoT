@@ -1,5 +1,5 @@
 import React from "react"; 
-import { Modal, Button } from "react-bootstrap"
+import { Modal, Button, Form } from "react-bootstrap"
 
 function IntroVideo(props) {
 
@@ -9,15 +9,34 @@ function IntroVideo(props) {
                   <Modal.Header closeButton>
                      <Modal.Title>Sign In</Modal.Title>
                   </Modal.Header>
-                  <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-                  <Modal.Footer>
-                     <Button variant="secondary" onClick={props.handleClose}>
-                        Close
-                     </Button>
-                     <Button variant="primary" onClick={props.handleClose}>
-                        Save Changes
-                     </Button>
-                  </Modal.Footer>
+                  <Modal.Body>
+                     <Form>
+                        <Form.Group controlId="formBasicEmail">
+                           <Form.Label>Email address</Form.Label>
+                           <Form.Control type="email" placeholder="Enter email" />
+                           <Form.Text className="text-muted">
+                              We'll never share your email with anyone else.
+                           </Form.Text>
+                        </Form.Group>
+
+                        <Form.Group controlId="formBasicPassword">
+                           <Form.Label>Password</Form.Label>
+                           <Form.Control type="password" placeholder="Password" />
+                        </Form.Group>
+                        <Form.Group controlId="formBasicCheckbox">
+                           <Form.Check type="checkbox" label="Check me out" />
+                        </Form.Group>
+                        <Button variant="info" type="submit">
+                           Login
+                        </Button>
+                     </Form>
+                  </Modal.Body>
+                  <div className="row my-3 justify-content-center">
+                        <button type="button" class="btn btn-info z-depth-1a"><i class="fab fa-facebook-f text-center"></i></button>
+                        <button type="button" class="btn btn-purple z-depth-1a"><i class="fab fa-twitter text-center"></i></button>
+                        <button type="button" class="btn btn-red z-depth-1a"><i class="fab fa-google-plus-g text-center"></i></button>
+                  </div>
+
                   {/* <div class="modal-header text-center">
                      <h3 class="modal-title w-100 dark-grey-text font-weight-bold">Sign In</h3>
                      <button type="button" class="close" data-dismiss="modal" aria-lable="close">&times;</button>
