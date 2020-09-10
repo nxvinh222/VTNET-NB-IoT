@@ -33,11 +33,14 @@ function IntroVideo(props) {
                         </Button>
                      </Form>
                   </Modal.Body>
-                  <div className="row my-3 justify-content-center">
-                        <button type="button" class="btn btn-info z-depth-1a"><i class="fab fa-facebook-f text-center"></i></button>
-                        <button type="button" class="btn btn-purple z-depth-1a"><i class="fab fa-twitter text-center"></i></button>
-                        <button type="button" class="btn btn-red z-depth-1a"><i class="fab fa-google-plus-g text-center"></i></button>
+                  <div className="footer-logo">
+                     <div className="row my-3 justify-content-center">
+                           <button type="button" class="btn btn-info z-depth-1a"><i class="fab fa-facebook-f text-center"></i></button>
+                           <button type="button" class="btn btn-purple z-depth-1a"><i class="fab fa-twitter text-center"></i></button>
+                           <button type="button" class="btn btn-red z-depth-1a"><i class="fab fa-google-plus-g text-center"></i></button>
+                     </div>
                   </div>
+
 
                   {/* <div class="modal-header text-center">
                      <h3 class="modal-title w-100 dark-grey-text font-weight-bold">Sign In</h3>
