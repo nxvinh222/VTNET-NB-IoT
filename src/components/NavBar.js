@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown, Button } from 'react-bootstrap'
 
 function NavBar() {
     return(
@@ -27,7 +27,9 @@ function NavBar() {
                         </NavDropdown>
                     </Nav>
                     <div className="login-button md-text-right">
-                        <a href="" className="btn btn-info" data-toggle="modal" data-target="#signupPage">Login<i class="fas fa-user-plus ml-3"></i></a>
+                        <Button href="" variant="info" data-toggle="modal" data-target="#signupPage">
+                            Login<i class="fas fa-user-plus ml-3"></i>
+                        </Button>
                     </div>
                 </Navbar.Collapse>
 
